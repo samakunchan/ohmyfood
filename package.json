@@ -1,0 +1,10 @@
+{
+  "name": "ohmyfood",
+  "author": "Samakunchan",
+  "version": "0.1.0",
+  "scripts": {},
+  "private": false,
+  "dependencies": {
+    "sass": "^1.69.0"
+  }
+}
