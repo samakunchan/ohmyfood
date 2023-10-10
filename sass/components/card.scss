@@ -1,0 +1,37 @@
+.card-link {
+  text-decoration: none;
+  color: black;
+  .card-title, .card-description {
+    margin: 5px 0;
+  }
+  .card-description {
+    font-weight: 300;
+  }
+  .card-article {
+    padding: 0;
+    width: 24em;
+    background-color: $white;
+    position: relative;
+    @include with-curve-all-edges;
+    .card-image {
+      width: 100%;
+      object-fit: cover;
+      @include with-curve-topRight-topLeft;
+    }
+    .card-content {
+      padding: 8px 15px;
+      position: relative;
+      .fa-heart{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 35px;
+        padding: 10px 20px;
+        &:hover {
+          color: #9356DC;
+        }
+      }
+    }
+  }
+}
+

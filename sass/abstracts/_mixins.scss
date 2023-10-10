@@ -18,12 +18,12 @@
 }
 
 /// @access private
-@mixin _buttonDefault() {
+@mixin _buttonDefault {
   background: linear-gradient(356deg, $primary -11.44%, #FF79DA 123.93%);
 }
 
 /// @access private
-@mixin _buttonOnHover() {
+@mixin _buttonOnHover {
   transition: 0.5s;
   background: linear-gradient(356deg, $primary -5.2%, $primary-light 110.74%);
   opacity: 0.85;
@@ -35,9 +35,9 @@
 /// @param {bool} $isHover
 @mixin with-gradiant-style-btn($isHovered) {
   @if type-of($isHovered) == 'bool' and $isHovered {
-    @include _buttonOnHover();
+    @include _buttonOnHover;
   } @else {
-    @include _buttonDefault();
+    @include _buttonDefault;
   }
 }
 
@@ -50,6 +50,19 @@
 
 /// Box Shadow for badge
 /// @access public
-@mixin with-box-shadow-style-badge() {
+@mixin with-box-shadow-style-badge {
   box-shadow: 0 2px 4px 0 #00000026;
+}
+
+/// Curve card edge
+/// @access public
+@mixin with-curve-topRight-topLeft {
+  border-top-left-radius: $card-angle;
+  border-top-right-radius: $card-angle;
+}
+
+/// Curve card edge
+/// @access public
+@mixin with-curve-all-edges {
+  border-radius: $card-angle;
 }

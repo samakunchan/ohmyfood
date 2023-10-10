@@ -34,13 +34,42 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1490196078);
 }
 
-p {
-  color: red;
+.card-link {
+  text-decoration: none;
+  color: black;
 }
-@media (max-width: 1024px) {
-  p {
-    color: green;
-  }
+.card-link .card-title, .card-link .card-description {
+  margin: 5px 0;
+}
+.card-link .card-description {
+  font-weight: 300;
+}
+.card-link .card-article {
+  padding: 0;
+  width: 24em;
+  background-color: #F3F3F3;
+  position: relative;
+  border-radius: 15px;
+}
+.card-link .card-article .card-image {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card-link .card-article .card-content {
+  padding: 8px 15px;
+  position: relative;
+}
+.card-link .card-article .card-content .fa-heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 35px;
+  padding: 10px 20px;
+}
+.card-link .card-article .card-content .fa-heart:hover {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=main.css.map */
