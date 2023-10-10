@@ -1,0 +1,68 @@
+/// Responsive breakpoint manager
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query));
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    $accept-break-points: map-keys($breakpoints);
+    @error 'No value found for `#{$breakpoint}`. Accept only: #{$accept-break-points}.';
+  }
+}
+
+/// @access private
+@mixin _buttonDefault {
+  background: linear-gradient(356deg, $primary -11.44%, #FF79DA 123.93%);
+}
+
+/// @access private
+@mixin _buttonOnHover {
+  transition: 0.5s;
+  background: linear-gradient(356deg, $primary -5.2%, $primary-light 110.74%);
+  opacity: 0.85;
+  @include with-box-shadow-style-btn(true);
+}
+
+/// Linear gradiant for button
+/// @access public
+/// @param {bool} $isHover
+@mixin with-gradiant-style-btn($isHovered) {
+  @if type-of($isHovered) == 'bool' and $isHovered {
+    @include _buttonOnHover;
+  } @else {
+    @include _buttonDefault;
+  }
+}
+
+/// Box Shadow for button
+/// @access public
+/// @param {boolean} $isHover
+@mixin with-box-shadow-style-btn($isHovered) {
+  box-shadow: if(type-of($isHovered) == 'bool' and $isHovered, 0 4px 10px 0 #00000070, 0 4px 10px 0 #00000040);
+}
+
+/// Box Shadow for badge
+/// @access public
+@mixin with-box-shadow-style {
+  box-shadow: 0 2px 4px 0 #00000015;
+}
+
+/// Curve card edge
+/// @access public
+@mixin with-curve-topRight-topLeft {
+  border-top-left-radius: $card-angle;
+  border-top-right-radius: $card-angle;
+}
+
+/// Curve card edge
+/// @access public
+@mixin with-curve-all-edges {
+  border-radius: $card-angle;
+}

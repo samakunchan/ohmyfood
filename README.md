@@ -14,7 +14,22 @@ Site Internet qui permette aux usagers de trouver des hébergements et des activ
 1. Repo public
 
         git clone https://github.com/samakunchan/ohmyfood
+        npm install
 2. Repo privé
 
         git clone https://<ACCESS_TOKEN>@github.com/samakunchan/ohmyfood
+        npm install
     
+## Dépendences: SASS
+
+Le projet utilise le préprocesseur SASS. Il est nécessaire de l'installer :
+
+- Windows : `choco install sass`
+- Mac/linux : `brew install sass/sass/sass`
+- Node: `npm install -g sass` ou `yarn add -g sass`
+
+Fermer le terminal et réouvrez pour tester : `sass --version`
+
+      sass styles.scss styles.css
+      ou
+      sass --watch styles.scss styles.css

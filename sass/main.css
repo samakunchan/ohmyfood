@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  background-color: #F3F3F3;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body, .call-to-action {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.text-title {
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+}
+
+.card-infos {
+  font-weight: 500;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0823529412);
+}
+header .arrow-back {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 1px;
+  }
+}
+header .text-title {
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  header .text-title {
+    padding: 15px;
+  }
+}
+
+footer {
+  width: 100%;
+  background: #353535;
+  color: white;
+  padding: 0 30px;
+}
+footer div {
+  padding: 0 30px;
+}
+footer div ul {
+  list-style: none;
+  padding: 0;
+}
+footer div ul .more-action .icon {
+  width: 40px;
+  margin-right: 10px;
+  text-align: center;
+  color: #7E7E7E;
+}
+
+.call-to-action {
+  padding: 20px 40px;
+  border-radius: 40px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  background: linear-gradient(356deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
+}
+.call-to-action:hover {
+  transition: 0.5s;
+  background: linear-gradient(356deg, #9356DC -5.2%, #FF79DA 110.74%);
+  opacity: 0.85;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4392156863);
+}
+
+.badge {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #99E2D0;
+  color: #008766;
+  cursor: default;
+  transition: 0.5s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0823529412);
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+.card-link .card-title, .card-link .card-description {
+  margin: 5px 0;
+}
+.card-link .card-description {
+  font-weight: 300;
+}
+.card-link .card-article {
+  padding: 0;
+  width: 24em;
+  background-color: white;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4392156863);
+}
+.card-link .card-article .card-image {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card-link .card-article .card-content {
+  padding: 8px 15px;
+  position: relative;
+}
+.card-link .card-article .card-content .fa-heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 35px;
+  padding: 10px 20px;
+}
+.card-link .card-article .card-content .fa-heart:hover {
+  color: #9356DC;
+}
+.card-link .card-article-infos {
+  padding: 0;
+  width: 24em;
+  background-color: #F3F3F3;
+  position: relative;
+  border-radius: 35px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4392156863);
+}
+.card-link .card-article-infos .card-content-infos {
+  padding: 30px 15px;
+  position: relative;
+}
+.card-link .card-article-infos .card-content-infos .pill {
+  position: absolute;
+  left: -25px;
+  padding: 5px 15px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+}
+.card-link .card-article-infos .card-content-infos .icon {
+  width: 100px;
+  text-align: center;
+  color: #7E7E7E;
+}
+.card-link .card-article-infos .card-content-infos:hover > .icon {
+  color: #9356DC;
+}
+
+/*# sourceMappingURL=main.css.map */

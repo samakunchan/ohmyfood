@@ -1,0 +1,21 @@
+footer {
+  width: 100%;
+  background: var(--Grey, #353535);
+  color: $white;
+  padding: 0 30px;
+  div{
+    padding: 0 30px;
+    ul{
+      list-style: none;
+      padding: 0;
+      .more-action {
+        .icon {
+          width: 40px;
+          margin-right: 10px;
+          text-align: center;
+          color: #7E7E7E;
+        }
+      }
+    }
+  }
+}

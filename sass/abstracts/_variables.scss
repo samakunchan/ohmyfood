@@ -1,0 +1,23 @@
+/// Break points
+$breakpoints: (
+        'small': (min-width: 768px),
+        'medium': (min-width: 1024px),
+        'large': (min-width: 1440px),
+);
+
+/// Default colors
+$white: white;
+$bg-color: #F3F3F3;
+$green-light: #99E2D0;
+$green-dark: #008766;
+$blue-light: #89C8FA;
+$blue-dark: #003A68;
+$primary: #9356DC;
+$primary-light: #FF79DA;
+
+/// Font families
+$font-roboto: 'Roboto', Arial, Helvetica, sans-serif;;
+$font-Shrikhand: 'Shrikhand', Arial, Helvetica, sans-serif;
+
+/// Cards
+$card-angle: 15px;
