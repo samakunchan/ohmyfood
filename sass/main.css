@@ -59,6 +59,26 @@ header .text-title {
   }
 }
 
+footer {
+  width: 100%;
+  background: #353535;
+  color: white;
+  padding: 0 30px;
+}
+footer div {
+  padding: 0 30px;
+}
+footer div ul {
+  list-style: none;
+  padding: 0;
+}
+footer div ul .more-action .icon {
+  width: 40px;
+  margin-right: 10px;
+  text-align: center;
+  color: #7E7E7E;
+}
+
 .call-to-action {
   padding: 20px 40px;
   border-radius: 40px;
