@@ -33,20 +33,28 @@
         }
       }
     }
+  }
+  .card-article-infos{
+    padding: 0;
+    width: 24em;
+    background-color: $bg-color;
+    position: relative;
+    border-radius: 35px;
+    @include with-box-shadow-style-btn(true);
     .card-content-infos {
-      padding: 15px 15px;
+      padding: 30px 15px;
       position: relative;
       .pill {
         position: absolute;
-        left: -12px;
-        padding: 5px 9px;
+        left: -25px;
+        padding: 5px 15px;
         background-color: #9356DC;
         border-radius: 50%;
         color: white;
-        font-size: 13px;
+        font-size: 30px;
       }
       .icon {
-        width: 50px;
+        width: 100px;
         text-align: center;
         color: #7E7E7E;
       }

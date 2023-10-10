@@ -3,6 +3,13 @@ body {
   background-color: #F3F3F3;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 body, .call-to-action {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 30px;
@@ -118,25 +125,33 @@ header .text-title {
 .card-link .card-article .card-content .fa-heart:hover {
   color: #9356DC;
 }
-.card-link .card-article .card-content-infos {
-  padding: 15px 15px;
+.card-link .card-article-infos {
+  padding: 0;
+  width: 24em;
+  background-color: #F3F3F3;
+  position: relative;
+  border-radius: 35px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4392156863);
+}
+.card-link .card-article-infos .card-content-infos {
+  padding: 30px 15px;
   position: relative;
 }
-.card-link .card-article .card-content-infos .pill {
+.card-link .card-article-infos .card-content-infos .pill {
   position: absolute;
-  left: -12px;
-  padding: 5px 9px;
+  left: -25px;
+  padding: 5px 15px;
   background-color: #9356DC;
   border-radius: 50%;
   color: white;
-  font-size: 13px;
+  font-size: 30px;
 }
-.card-link .card-article .card-content-infos .icon {
-  width: 50px;
+.card-link .card-article-infos .card-content-infos .icon {
+  width: 100px;
   text-align: center;
   color: #7E7E7E;
 }
-.card-link .card-article .card-content-infos:hover > .icon {
+.card-link .card-article-infos .card-content-infos:hover > .icon {
   color: #9356DC;
 }
 
