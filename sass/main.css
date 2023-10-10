@@ -18,6 +18,10 @@ body, .call-to-action {
   line-height: normal;
 }
 
+.f300 {
+  font-weight: 300;
+}
+
 .text-title {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
@@ -114,9 +118,6 @@ footer div ul .more-action .icon {
 .card-link .card-title, .card-link .card-description {
   margin: 5px 0;
 }
-.card-link .card-description {
-  font-weight: 300;
-}
 .card-link .card-article {
   padding: 0;
   width: 24em;
@@ -186,6 +187,19 @@ footer div ul .more-action .icon {
   width: 8em;
   display: flex;
   justify-content: space-between;
+}
+
+.reservation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #F6F6F6;
+  padding-bottom: 30px;
+}
+.reservation div {
+  padding: 30px 0;
+  text-align: center;
+  width: 18em;
 }
 
 /*# sourceMappingURL=main.css.map */
