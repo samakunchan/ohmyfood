@@ -13,6 +13,7 @@
     background-color: $white;
     position: relative;
     @include with-curve-all-edges;
+    @include with-box-shadow-style-btn(true);
     .card-image {
       width: 100%;
       object-fit: cover;
@@ -30,6 +31,27 @@
         &:hover {
           color: #9356DC;
         }
+      }
+    }
+    .card-content-infos {
+      padding: 15px 15px;
+      position: relative;
+      .pill {
+        position: absolute;
+        left: -12px;
+        padding: 5px 9px;
+        background-color: #9356DC;
+        border-radius: 50%;
+        color: white;
+        font-size: 13px;
+      }
+      .icon {
+        width: 50px;
+        text-align: center;
+        color: #7E7E7E;
+      }
+      &:hover > .icon {
+        color: $primary;
       }
     }
   }

@@ -1,9 +1,22 @@
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .text-title {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+}
+
+.card-infos {
+  font-weight: 500;
+}
+
+.row {
+  display: flex;
+  align-items: center;
 }
 
 .call-to-action {
@@ -50,6 +63,7 @@ body {
   background-color: #F3F3F3;
   position: relative;
   border-radius: 15px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4392156863);
 }
 .card-link .card-article .card-image {
   width: 100%;
@@ -69,6 +83,27 @@ body {
   padding: 10px 20px;
 }
 .card-link .card-article .card-content .fa-heart:hover {
+  color: #9356DC;
+}
+.card-link .card-article .card-content-infos {
+  padding: 15px 15px;
+  position: relative;
+}
+.card-link .card-article .card-content-infos .pill {
+  position: absolute;
+  left: -12px;
+  padding: 5px 9px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: white;
+  font-size: 13px;
+}
+.card-link .card-article .card-content-infos .icon {
+  width: 50px;
+  text-align: center;
+  color: #7E7E7E;
+}
+.card-link .card-article .card-content-infos:hover > .icon {
   color: #9356DC;
 }
 
