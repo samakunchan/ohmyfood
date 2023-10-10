@@ -1,0 +1,23 @@
+header{
+  text-align: center;
+  background-color: $white;
+  position: relative;
+  @include with-box-shadow-style;
+  .arrow-back{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+  @include respond-to('medium') {
+    padding: 1px;
+  }
+  .text-title {
+    margin: 0;
+    @include respond-to('medium') {
+      padding: 15px;
+    }
+  }
+}

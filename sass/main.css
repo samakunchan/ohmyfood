@@ -1,6 +1,11 @@
 body {
+  margin: 0;
+  background-color: #F3F3F3;
+}
+
+body, .call-to-action {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -19,10 +24,38 @@ body {
   align-items: center;
 }
 
+header {
+  text-align: center;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0823529412);
+}
+header .arrow-back {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 1px;
+  }
+}
+header .text-title {
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  header .text-title {
+    padding: 15px;
+  }
+}
+
 .call-to-action {
-  padding: 15px;
-  border-radius: 25px;
-  color: #F3F3F3;
+  padding: 20px 40px;
+  border-radius: 40px;
+  color: white;
   border: none;
   cursor: pointer;
   transition: 0.5s;
@@ -44,7 +77,7 @@ body {
   color: #008766;
   cursor: default;
   transition: 0.5s;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1490196078);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0823529412);
 }
 
 .card-link {
@@ -60,7 +93,7 @@ body {
 .card-link .card-article {
   padding: 0;
   width: 24em;
-  background-color: #F3F3F3;
+  background-color: white;
   position: relative;
   border-radius: 15px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4392156863);

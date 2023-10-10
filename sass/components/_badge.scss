@@ -6,5 +6,5 @@
   color: $green-dark;
   cursor: default;
   transition: 0.5s;
-  @include with-box-shadow-style-badge()
+  @include with-box-shadow-style
 }
