@@ -16,6 +16,17 @@
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4392156863);
 }
 
+.badge {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #99E2D0;
+  color: #008766;
+  cursor: default;
+  transition: 0.5s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1490196078);
+}
+
 p {
   color: red;
 }
