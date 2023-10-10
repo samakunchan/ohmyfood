@@ -1,0 +1,28 @@
+.call-to-action {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding: 15px;
+  border-radius: 25px;
+  color: #F3F3F3;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  background: linear-gradient(356deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
+}
+.call-to-action:hover {
+  transition: 0.5s;
+  background: linear-gradient(356deg, #9356DC -5.2%, #FF79DA 110.74%);
+  opacity: 0.85;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4392156863);
+}
+
+p {
+  color: red;
+}
+@media (max-width: 1024px) {
+  p {
+    color: green;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

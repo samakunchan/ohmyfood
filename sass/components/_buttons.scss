@@ -1,0 +1,15 @@
+.call-to-action{
+  font-family: $font-roboto;
+  padding: 15px;
+  border-radius: 25px;
+  color: $white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  @include with-gradiant-style-btn(false);
+  @include with-box-shadow-style-btn(false);
+  &:hover {
+    @include with-gradiant-style-btn(true);
+  }
+}
+
