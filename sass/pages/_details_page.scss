@@ -1,0 +1,89 @@
+.description-menu{
+  position: relative;
+  h2 {
+    text-transform: uppercase;
+    &:after {
+      content: "";
+      width: 95px;
+      height: 0.1em;
+      background: $green-light;
+      position: absolute;
+      top: 125px;
+      left: 0;
+    }
+  }
+  .card-link {
+    .card-article {
+      overflow: hidden;
+      .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        .card-selected {
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          .price {
+            margin-bottom: 1em
+          }
+          .checkbox {
+            flex-grow: 1;
+            background: #99E2D0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .card-container {
+        display: flex;
+        width: 32em;
+        align-items: center;
+        .menu {
+          //margin: 15px;
+          width: 25em;
+          transition: 1s;
+          h3 {
+            padding: 15px;
+          }
+          p {
+            margin: 0;
+            padding: 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+            width: 100%;
+          }
+        }
+        div {
+          width: 4em;
+          .price {
+            margin-bottom: 1em;
+            padding: 0 20px;
+            text-align: end;
+          }
+        }
+        .checkbox {
+          padding: 62px 41px;
+          background: #99E2D0;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &:hover > .menu {
+          transition: 1s;
+          width: 21em;
+        }
+      }
+    }
+
+  }
+}
+
+.flex-child > h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

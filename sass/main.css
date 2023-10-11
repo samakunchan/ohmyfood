@@ -10,6 +10,10 @@ main {
   align-items: center;
 }
 
+section {
+  padding: 30px 0;
+}
+
 body, .call-to-action {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 30px;
@@ -67,14 +71,17 @@ footer {
   width: 100%;
   background: var(--Grey, #353535);
   color: white;
-  padding: 0 30px;
+  display: flex;
+  justify-content: center;
 }
 footer div {
   padding: 0 30px;
+  width: 28em;
 }
 footer div ul {
   list-style: none;
   padding: 0;
+  line-height: 1.6em;
 }
 footer div ul .more-action .icon {
   width: 40px;
@@ -120,7 +127,7 @@ footer div ul .more-action .icon {
 }
 .card-link .card-article {
   padding: 0;
-  width: 24em;
+  width: 28em;
   background-color: white;
   position: relative;
   border-radius: 15px;
@@ -148,14 +155,14 @@ footer div ul .more-action .icon {
 }
 .card-link .card-article-infos {
   padding: 0;
-  width: 24em;
+  width: 28em;
   background-color: #F3F3F3;
   position: relative;
   border-radius: 35px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4392156863);
 }
 .card-link .card-article-infos .card-content-infos {
-  padding: 30px 15px;
+  padding: 50px 15px;
   position: relative;
 }
 .card-link .card-article-infos .card-content-infos .pill {
@@ -199,7 +206,110 @@ footer div ul .more-action .icon {
 .reservation div {
   padding: 30px 0;
   text-align: center;
-  width: 18em;
+  width: 30em;
+}
+.reservation div p {
+  margin: 50px 0;
+}
+
+.fonctionnement {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+.fonctionnement div {
+  padding: 30px 0;
+  text-align: center;
+}
+.fonctionnement div h2 {
+  text-align: left;
+}
+
+.description-menu {
+  position: relative;
+}
+.description-menu h2 {
+  text-transform: uppercase;
+}
+.description-menu h2:after {
+  content: "";
+  width: 95px;
+  height: 0.1em;
+  background: #99E2D0;
+  position: absolute;
+  top: 125px;
+  left: 0;
+}
+.description-menu .card-link .card-article {
+  overflow: hidden;
+}
+.description-menu .card-link .card-article .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.description-menu .card-link .card-article .container .card-selected {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.description-menu .card-link .card-article .container .card-selected .price {
+  margin-bottom: 1em;
+}
+.description-menu .card-link .card-article .container .card-selected .checkbox {
+  flex-grow: 1;
+  background: #99E2D0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description-menu .card-link .card-article .card-container {
+  display: flex;
+  width: 32em;
+  align-items: center;
+}
+.description-menu .card-link .card-article .card-container .menu {
+  width: 25em;
+  transition: 1s;
+}
+.description-menu .card-link .card-article .card-container .menu h3 {
+  padding: 15px;
+}
+.description-menu .card-link .card-article .card-container .menu p {
+  margin: 0;
+  padding: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 100%;
+}
+.description-menu .card-link .card-article .card-container div {
+  width: 4em;
+}
+.description-menu .card-link .card-article .card-container div .price {
+  margin-bottom: 1em;
+  padding: 0 20px;
+  text-align: end;
+}
+.description-menu .card-link .card-article .card-container .checkbox {
+  padding: 62px 41px;
+  background: #99E2D0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description-menu .card-link .card-article .card-container:hover > .menu {
+  transition: 1s;
+  width: 21em;
+}
+
+.flex-child > h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=main.css.map */

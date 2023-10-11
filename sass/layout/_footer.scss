@@ -2,12 +2,15 @@ footer {
   width: 100%;
   background: var(--Grey, #353535);
   color: $white;
-  padding: 0 30px;
+  display: flex;
+  justify-content: center;
   div{
     padding: 0 30px;
+    width: $default-size;
     ul{
       list-style: none;
       padding: 0;
+      line-height: 1.6em;
       .more-action {
         .icon {
           width: 40px;
