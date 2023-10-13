@@ -53,6 +53,7 @@
             background: transparent;
             height: 100%;
             left: 0;
+            cursor: pointer;
             @include respond-to('medium') {
               &:hover ~ .menu-background {
                 .menu {
@@ -61,7 +62,7 @@
               }
             }
           }
-          input[type="checkbox"] {
+          input[type="checkbox"].card-order-input {
             position: absolute;
             top: 0;
             left: 50%;
@@ -122,18 +123,6 @@
     }
   }
 }
-
-input[type="checkbox"]:checked + .menu-background .menu {
-  color: red;
-  border: none;
-  outline: 2px solid deeppink;
-}
-//.card-link {
-//  &:hover > .card-article .container .card-container .menu {
-//    transition: 1s;
-//    width: 80%;
-//  }
-//}
 
 .flex-child > h2 {
   white-space: nowrap;

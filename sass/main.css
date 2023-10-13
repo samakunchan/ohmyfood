@@ -303,20 +303,21 @@ footer div ul .more-action .icon {
   background: transparent;
   height: 100%;
   left: 0;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .menus-section .menu-content .card-link .card-article .card-container .card-label:hover ~ .menu-background .menu {
     width: 80%;
   }
 }
-.menus-section .menu-content .card-link .card-article .card-container input[type=checkbox] {
+.menus-section .menu-content .card-link .card-article .card-container input[type=checkbox].card-order-input {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: -1;
 }
-.menus-section .menu-content .card-link .card-article .card-container input[type=checkbox]:checked ~ .menu-background .menu {
+.menus-section .menu-content .card-link .card-article .card-container input[type=checkbox].card-order-input:checked ~ .menu-background .menu {
   width: 80%;
 }
 .menus-section .menu-content .card-link .card-article .card-container .menu-background {
@@ -361,12 +362,6 @@ footer div ul .more-action .icon {
   font-size: 40px;
   top: 50%;
   transform: translate(50%, -50%);
-}
-
-input[type=checkbox]:checked + .menu-background .menu {
-  color: red;
-  border: none;
-  outline: 2px solid deeppink;
 }
 
 .flex-child > h2 {
