@@ -1,3 +1,14 @@
+:root {
+  --white: white;
+  --bg-color: #F3F3F3;
+  --green-light: #99E2D0;
+  --green-dark: #008766;
+  --blue-light: #89C8FA;
+  --blue-dark: #003A68;
+  --primary: #9356DC;
+  --primary-light: #FF79DA;
+}
+
 body {
   margin: 0;
   background-color: #F3F3F3;
@@ -127,7 +138,6 @@ footer div ul .more-action .icon {
 }
 .card-link .card-article {
   padding: 0;
-  width: 28em;
   background-color: white;
   position: relative;
   border-radius: 15px;
@@ -155,7 +165,7 @@ footer div ul .more-action .icon {
 }
 .card-link .card-article-infos {
   padding: 0;
-  width: 28em;
+  max-width: 28em;
   background-color: #F3F3F3;
   position: relative;
   border-radius: 35px;
@@ -181,6 +191,12 @@ footer div ul .more-action .icon {
 }
 .card-link .card-article-infos .card-content-infos:hover > .icon {
   color: #9356DC;
+}
+
+.card-list {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .localisation {
@@ -213,50 +229,63 @@ footer div ul .more-action .icon {
 }
 
 .fonctionnement {
-  display: flex;
-  justify-content: center;
   width: 100%;
   background-color: white;
 }
-.fonctionnement div {
-  padding: 30px 0;
+.fonctionnement .fonctionnement-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.fonctionnement .fonctionnement-container .fonctionnement-item {
+  padding: 30px;
   text-align: center;
 }
-.fonctionnement div h2 {
+.fonctionnement .fonctionnement-container .fonctionnement-item h2 {
   text-align: left;
 }
 
-.description-menu {
+.menus-section {
   position: relative;
+  display: flex;
+  width: 90%;
+  margin: 0 25px;
+  max-width: 24em;
 }
-.description-menu h2 {
+.menus-section .menus {
+  width: 100%;
+}
+.menus-section h2 {
   text-transform: uppercase;
 }
-.description-menu h2:after {
+.menus-section h2:after {
   content: "";
   width: 95px;
   height: 0.1em;
   background: #99E2D0;
   position: absolute;
   top: 125px;
-  left: 0;
+  left: 2px;
 }
-.description-menu .card-link .card-article {
+.menus-section .menu-content {
+  margin: 10px 0;
+}
+.menus-section .menu-content .card-link .card-article {
   overflow: hidden;
 }
-.description-menu .card-link .card-article .container {
+.menus-section .menu-content .card-link .card-article .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
-.description-menu .card-link .card-article .container .card-selected {
+.menus-section .menu-content .card-link .card-article .container .card-selected {
   display: flex;
   justify-content: center;
   align-items: end;
 }
-.description-menu .card-link .card-article .container .card-selected .price {
+.menus-section .menu-content .card-link .card-article .container .card-selected .price {
   margin-bottom: 1em;
 }
-.description-menu .card-link .card-article .container .card-selected .checkbox {
+.menus-section .menu-content .card-link .card-article .container .card-selected .checkbox {
   flex-grow: 1;
   background: #99E2D0;
   height: 100%;
@@ -264,50 +293,87 @@ footer div ul .more-action .icon {
   justify-content: center;
   align-items: center;
 }
-.description-menu .card-link .card-article .card-container {
+.menus-section .menu-content .card-link .card-article .card-container .menu-background {
+  background-color: #99E2D0;
+  position: relative;
+  height: 5em;
+}
+.menus-section .menu-content .card-link .card-article .card-container .menu-background .menu {
   display: flex;
-  width: 32em;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: 0.5s;
+  position: absolute;
+  z-index: 2;
 }
-.description-menu .card-link .card-article .card-container .menu {
-  width: 25em;
-  transition: 1s;
-}
-.description-menu .card-link .card-article .card-container .menu h3 {
-  padding: 15px;
-}
-.description-menu .card-link .card-article .card-container .menu p {
-  margin: 0;
-  padding: 15px;
+.menus-section .menu-content .card-link .card-article .card-container .menu-background .menu h3, .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   display: inline-block;
   width: 100%;
+  margin: 0;
+  padding: 25px 0 0 25px;
 }
-.description-menu .card-link .card-article .card-container div {
-  width: 4em;
+.menus-section .menu-content .card-link .card-article .card-container .menu-background .menu .menu-description {
+  width: 88%;
 }
-.description-menu .card-link .card-article .card-container div .price {
-  margin-bottom: 1em;
-  padding: 0 20px;
-  text-align: end;
+.menus-section .menu-content .card-link .card-article .card-container .menu-background .menu p {
+  margin: 0;
 }
-.description-menu .card-link .card-article .card-container .checkbox {
-  padding: 62px 41px;
-  background: #99E2D0;
-  height: 100%;
+.menus-section .menu-content .card-link .card-article .card-container .menu-background .menu .price {
   display: flex;
+  align-items: end;
   justify-content: center;
-  align-items: center;
+  padding: 10px;
 }
-.description-menu .card-link .card-article .card-container:hover > .menu {
+.menus-section .menu-content .card-link .card-article .card-container .menu-background .fa-check-circle {
+  position: absolute;
+  right: 70px;
+  color: white;
+  font-size: 40px;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.menus-section .menu-content .card-link .card-article .card-container .menu-background:hover > .menu {
   transition: 1s;
-  width: 21em;
+  width: 80%;
 }
 
 .flex-child > h2 {
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.xxx {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.xxx .menu-container {
+  width: 100%;
+  padding: 30px 0;
+  position: relative;
+  top: -90px;
+  background-color: #F3F3F3;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+}
+.xxx .menu-content {
+  display: flex;
+  justify-content: center;
+}
+
+.myoverflow {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
   overflow: hidden;
   text-overflow: ellipsis;
 }

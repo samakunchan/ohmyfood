@@ -1,3 +1,14 @@
+:root {
+  --white: white;
+  --bg-color: #F3F3F3;
+  --green-light: #99E2D0;
+  --green-dark: #008766;
+  --blue-light: #89C8FA;
+  --blue-dark: #003A68;
+  --primary: #9356DC;
+  --primary-light: #FF79DA;
+}
+
 body {
   margin: 0;
   background-color: $bg-color;

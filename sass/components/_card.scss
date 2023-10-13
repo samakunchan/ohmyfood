@@ -7,7 +7,7 @@
 
   .card-article {
     padding: 0;
-    width: $default-size;
+    //max-width: $default-size;
     background-color: $white;
     position: relative;
     @include with-curve-all-edges;
@@ -34,7 +34,7 @@
   }
   .card-article-infos{
     padding: 0;
-    width: $default-size;
+    max-width: $default-size;
     background-color: $bg-color;
     position: relative;
     border-radius: 35px;

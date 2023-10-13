@@ -1,5 +1,12 @@
-.description-menu{
+.menus-section{
   position: relative;
+  display: flex;
+  width: 90%;
+  margin: 0 25px;
+  max-width: 24em;
+  .menus{
+    width: 100%;
+  }
   h2 {
     text-transform: uppercase;
     &:after {
@@ -9,81 +16,129 @@
       background: $green-light;
       position: absolute;
       top: 125px;
-      left: 0;
+      left: 2px;
     }
   }
-  .card-link {
-    .card-article {
-      overflow: hidden;
-      .container {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        .card-selected {
-          display: flex;
-          justify-content: center;
-          align-items: end;
-          .price {
-            margin-bottom: 1em
-          }
-          .checkbox {
-            flex-grow: 1;
-            background: #99E2D0;
-            height: 100%;
+  .menu-content {
+    margin: 10px 0;
+    .card-link {
+      .card-article {
+        overflow: hidden;
+        .container {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          .card-selected {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: end;
+            .price {
+              margin-bottom: 1em
+            }
+            .checkbox {
+              flex-grow: 1;
+              background: #99E2D0;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
           }
         }
-      }
-      .card-container {
-        display: flex;
-        width: 32em;
-        align-items: center;
-        .menu {
-          //margin: 15px;
-          width: 25em;
-          transition: 1s;
-          h3 {
-            padding: 15px;
-          }
-          p {
-            margin: 0;
-            padding: 15px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            display: inline-block;
-            width: 100%;
-          }
-        }
-        div {
-          width: 4em;
-          .price {
-            margin-bottom: 1em;
-            padding: 0 20px;
-            text-align: end;
-          }
-        }
-        .checkbox {
-          padding: 62px 41px;
-          background: #99E2D0;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        &:hover > .menu {
-          transition: 1s;
-          width: 21em;
-        }
-      }
-    }
+        .card-container {
+          .menu-background {
+            background-color: $green-light;
+            position: relative;
+            height: 5em;
+            .menu {
+              display: flex;
 
+              width: 100%;
+              height: 100%;
+              background-color: $white;
+              transition: .5s;
+              position: absolute;
+              z-index: 2;
+              h3, p {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                display: inline-block;
+                width: 100%;
+                margin: 0;
+                padding: 25px 0 0 25px;
+              }
+              .menu-description {
+                width: 88%;
+              }
+              p {
+                margin: 0;
+              }
+              .price {
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                padding: 10px;
+              }
+            }
+            .fa-check-circle {
+              position: absolute;
+              right: 70px;
+              color: $white;
+              font-size: 40px;
+              top: 50%;
+              transform: translate(50%, -50%);
+            }
+            &:hover > .menu {
+              transition: 1s;
+              width: 80%;
+            }
+          }
+        }
+      }
+
+    }
   }
 }
 
 .flex-child > h2 {
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.xxx{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  //background-color: white;
+  .menu-container{
+    //@include with-curve-topRight-topLeft;
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+    top: -90px;
+    background-color: $bg-color;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    h2 {
+      //margin-bottom: 0;
+    }
+  }
+  .menu-content {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.myoverflow{
+  //width: 100%;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
   overflow: hidden;
   text-overflow: ellipsis;
 }
