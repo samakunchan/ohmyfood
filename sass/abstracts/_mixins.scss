@@ -17,6 +17,16 @@
   }
 }
 
+/// Default layout section
+/// @access public
+@mixin mobile-layout-section {
+  position: relative;
+  display: flex;
+  width: 90%;
+  margin: 0 25px;
+  max-width: $default-size;
+}
+
 /// @access private
 @mixin _buttonDefault {
   background: linear-gradient(356deg, $primary -11.44%, #FF79DA 123.93%);
