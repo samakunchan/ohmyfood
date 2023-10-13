@@ -1,0 +1,55 @@
+.fa-heart, .like-restaurant-input{
+  position: absolute;
+}
+
+.heart-container {
+  width: 1.8em;
+  font-size: 50px;
+  .like-restaurant-label {
+    position: relative;
+    cursor: pointer;
+    .heart-empty {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: $white;
+      -webkit-text-stroke-color: black;
+      -webkit-text-stroke-width: 2px;
+    }
+    .heart-full {
+      opacity: 0;
+      background: linear-gradient(196deg, $primary -11.44%, $primary-light 123.93%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-color: $primary;
+      -webkit-text-stroke-width: 0;
+    }
+    &:hover > .heart-empty {
+      -webkit-transition-duration: .5s;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $primary;
+    }
+    &:hover > .heart-full {
+      -webkit-transition-duration: 1s, .5s;
+      opacity: 1;
+    }
+  }
+  .like-restaurant-input {
+    top: 15px;
+    right: -34px
+  }
+
+  input[type="checkbox"].like-restaurant-input {
+    &:checked ~ .heart-empty {
+      -webkit-transition-duration: .5s;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $primary;
+    }
+    &:checked ~ .heart-full {
+      -webkit-transition-duration: 1s, .5s;
+      -webkit-text-stroke-width: 0;
+      opacity: 1;
+    }
+  }
+
+}
+
+
