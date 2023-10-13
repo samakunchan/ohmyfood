@@ -293,6 +293,32 @@ footer div ul .more-action .icon {
   justify-content: center;
   align-items: center;
 }
+.menus-section .menu-content .card-link .card-article .card-container {
+  position: relative;
+}
+.menus-section .menu-content .card-link .card-article .card-container .card-label {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  background: transparent;
+  height: 100%;
+  left: 0;
+}
+@media (min-width: 1024px) {
+  .menus-section .menu-content .card-link .card-article .card-container .card-label:hover ~ .menu-background .menu {
+    width: 80%;
+  }
+}
+.menus-section .menu-content .card-link .card-article .card-container input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: -1;
+}
+.menus-section .menu-content .card-link .card-article .card-container input[type=checkbox]:checked ~ .menu-background .menu {
+  width: 80%;
+}
 .menus-section .menu-content .card-link .card-article .card-container .menu-background {
   background-color: #99E2D0;
   position: relative;
@@ -336,9 +362,11 @@ footer div ul .more-action .icon {
   top: 50%;
   transform: translate(50%, -50%);
 }
-.menus-section .menu-content .card-link .card-article .card-container .menu-background:hover > .menu {
-  transition: 1s;
-  width: 80%;
+
+input[type=checkbox]:checked + .menu-background .menu {
+  color: red;
+  border: none;
+  outline: 2px solid deeppink;
 }
 
 .flex-child > h2 {

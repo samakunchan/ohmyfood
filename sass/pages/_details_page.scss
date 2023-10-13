@@ -45,13 +45,40 @@
           }
         }
         .card-container {
+          position: relative;
+          .card-label {
+            position: absolute;
+            z-index: 5;
+            width: 100%;
+            background: transparent;
+            height: 100%;
+            left: 0;
+            @include respond-to('medium') {
+              &:hover ~ .menu-background {
+                .menu {
+                  width: 80%
+                }
+              }
+            }
+          }
+          input[type="checkbox"] {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            z-index: -1;
+            &:checked ~ .menu-background {
+              .menu {
+                width: 80%
+              }
+            }
+          }
           .menu-background {
             background-color: $green-light;
             position: relative;
             height: 5em;
             .menu {
               display: flex;
-
               width: 100%;
               height: 100%;
               background-color: $white;
@@ -88,17 +115,25 @@
               top: 50%;
               transform: translate(50%, -50%);
             }
-            &:hover > .menu {
-              transition: 1s;
-              width: 80%;
-            }
           }
+
         }
       }
-
     }
   }
 }
+
+input[type="checkbox"]:checked + .menu-background .menu {
+  color: red;
+  border: none;
+  outline: 2px solid deeppink;
+}
+//.card-link {
+//  &:hover > .card-article .container .card-container .menu {
+//    transition: 1s;
+//    width: 80%;
+//  }
+//}
 
 .flex-child > h2 {
   white-space: nowrap;
