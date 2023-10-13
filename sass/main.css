@@ -25,6 +25,10 @@ section {
   padding: 30px 0;
 }
 
+.space {
+  margin: 10px 0;
+}
+
 body, .call-to-action {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 30px;
@@ -41,13 +45,18 @@ body, .call-to-action {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
 
-.card-infos {
+.f500 {
   font-weight: 500;
 }
 
 .row {
   display: flex;
   align-items: center;
+}
+
+.row-between {
+  display: flex;
+  justify-content: space-between;
 }
 
 header {
@@ -129,6 +138,56 @@ footer div ul .more-action .icon {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0823529412);
 }
 
+.fa-heart, .like-restaurant-input {
+  position: absolute;
+}
+
+.heart-container {
+  width: 1.8em;
+  font-size: 50px;
+}
+.heart-container .like-restaurant-label {
+  position: relative;
+  cursor: pointer;
+}
+.heart-container .like-restaurant-label .heart-empty {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+}
+.heart-container .like-restaurant-label .heart-full {
+  opacity: 0;
+  background: linear-gradient(196deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #9356DC;
+  -webkit-text-stroke-width: 0;
+}
+.heart-container .like-restaurant-label:hover > .heart-empty {
+  -webkit-transition-duration: 0.5s;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #9356DC;
+}
+.heart-container .like-restaurant-label:hover > .heart-full {
+  -webkit-transition-duration: 1s, 0.5s;
+  opacity: 1;
+}
+.heart-container .like-restaurant-input {
+  top: 15px;
+  right: -34px;
+}
+.heart-container input[type=checkbox].like-restaurant-input:checked ~ .heart-empty {
+  -webkit-transition-duration: 0.5s;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #9356DC;
+}
+.heart-container input[type=checkbox].like-restaurant-input:checked ~ .heart-full {
+  -webkit-transition-duration: 1s, 0.5s;
+  -webkit-text-stroke-width: 0;
+  opacity: 1;
+}
+
 .card-link {
   text-decoration: none;
   color: black;
@@ -152,16 +211,6 @@ footer div ul .more-action .icon {
 .card-link .card-article .card-content {
   padding: 8px 15px;
   position: relative;
-}
-.card-link .card-article .card-content .fa-heart {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 35px;
-  padding: 10px 20px;
-}
-.card-link .card-article .card-content .fa-heart:hover {
-  color: #9356DC;
 }
 .card-link .card-article-infos {
   padding: 0;
@@ -193,10 +242,15 @@ footer div ul .more-action .icon {
   color: #9356DC;
 }
 
-.card-list {
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+.restaurants-section {
+  position: relative;
+  display: flex;
+  width: 90%;
+  margin: 0 25px;
+  max-width: 28em;
+}
+.restaurants-section .menus {
+  width: 100%;
 }
 
 .localisation {
@@ -250,7 +304,7 @@ footer div ul .more-action .icon {
   display: flex;
   width: 90%;
   margin: 0 25px;
-  max-width: 24em;
+  max-width: 28em;
 }
 .menus-section .menus {
   width: 100%;
@@ -267,15 +321,8 @@ footer div ul .more-action .icon {
   top: 125px;
   left: 2px;
 }
-.menus-section .menu-content {
-  margin: 10px 0;
-}
 .menus-section .menu-content .card-link .card-article {
   overflow: hidden;
-}
-.menus-section .menu-content .card-link .card-article .container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
 }
 .menus-section .menu-content .card-link .card-article .container .card-selected {
   display: flex;

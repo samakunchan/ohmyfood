@@ -4,10 +4,8 @@
   .card-title, .card-description {
     margin: 5px 0;
   }
-
   .card-article {
     padding: 0;
-    //max-width: $default-size;
     background-color: $white;
     position: relative;
     @include with-curve-all-edges;
@@ -20,16 +18,6 @@
     .card-content {
       padding: 8px 15px;
       position: relative;
-      .fa-heart{
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 35px;
-        padding: 10px 20px;
-        &:hover {
-          color: #9356DC;
-        }
-      }
     }
   }
   .card-article-infos{

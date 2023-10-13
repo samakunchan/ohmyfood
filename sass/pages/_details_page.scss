@@ -1,9 +1,5 @@
 .menus-section{
-  position: relative;
-  display: flex;
-  width: 90%;
-  margin: 0 25px;
-  max-width: 24em;
+  @include mobile-layout-section;
   .menus{
     width: 100%;
   }
@@ -20,13 +16,12 @@
     }
   }
   .menu-content {
-    margin: 10px 0;
     .card-link {
       .card-article {
         overflow: hidden;
         .container {
-          display: grid;
-          grid-template-columns: 2fr 1fr;
+          //display: grid;
+          //grid-template-columns: 2fr 1fr;
           .card-selected {
             display: flex;
             justify-content: center;
