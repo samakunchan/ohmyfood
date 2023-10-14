@@ -12,6 +12,7 @@
     @include with-box-shadow-style-btn(true);
     .card-image {
       width: 100%;
+      height: 18em;
       object-fit: cover;
       @include with-curve-topRight-topLeft;
     }

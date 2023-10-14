@@ -3,6 +3,10 @@ body {
   background-color: #F3F3F3;
 }
 
+.body-detail {
+  background-color: white;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -196,6 +200,7 @@ footer div ul .more-action .icon {
 }
 .card-link .card-article .card-image {
   width: 100%;
+  height: 18em;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -292,7 +297,32 @@ footer div ul .more-action .icon {
   text-align: left;
 }
 
-.restaurant-section {
+.header-image {
+  height: 24em;
+  width: 100%;
+}
+
+.bg-la-palette-du-gout {
+  background: center/cover no-repeat url(../../images/restaurants/restaurant-la-palette-du-gout.jpg);
+}
+
+.bg-a-la-francaise {
+  background: center/cover no-repeat url(../../images/restaurants/restaurant-a-la-francaise.jpg);
+}
+
+.bg-le-delice-des-sens {
+  background: center/cover no-repeat url(../../images/restaurants/restaurant-le-delice-des-sens.jpg);
+}
+
+.bg-la-note-enchantee {
+  background: center/cover no-repeat url(../../images/restaurants/restaurant-la-note-enchantee.jpg);
+}
+
+.bg-section-menus {
+  max-width: 56em;
+  background-color: #F3F3F3;
+}
+.bg-section-menus .restaurant-section {
   width: 100%;
   padding: 30px 0 0 0;
   position: relative;
@@ -304,31 +334,31 @@ footer div ul .more-action .icon {
   flex-direction: column;
   align-items: center;
 }
-.restaurant-section .menus-section {
+.bg-section-menus .restaurant-section .menus-section {
   padding: 0;
   position: relative;
   width: 100%;
   margin: 0 auto;
   max-width: 28em;
 }
-.restaurant-section .menus-section .heart-container {
+.bg-section-menus .restaurant-section .menus-section .heart-container {
   position: relative;
 }
-.restaurant-section .menus-section .heart-container label {
+.bg-section-menus .restaurant-section .menus-section .heart-container label {
   position: absolute;
   top: 34%;
 }
-.restaurant-section .menus-section .heart-container .heart-empty {
+.bg-section-menus .restaurant-section .menus-section .heart-container .heart-empty {
   -webkit-text-fill-color: #F3F3F3;
 }
-.restaurant-section .menus-section .menus {
+.bg-section-menus .restaurant-section .menus-section .menus {
   width: 100%;
 }
-.restaurant-section .menus-section h3 {
+.bg-section-menus .restaurant-section .menus-section h3 {
   text-transform: uppercase;
   position: relative;
 }
-.restaurant-section .menus-section h3:after {
+.bg-section-menus .restaurant-section .menus-section h3:after {
   content: "";
   width: 95px;
   height: 0.1em;
@@ -337,18 +367,18 @@ footer div ul .more-action .icon {
   top: 60px;
   left: 2px;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article {
   overflow: hidden;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .container .card-selected {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .container .card-selected {
   display: flex;
   justify-content: center;
   align-items: end;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .container .card-selected .price {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .container .card-selected .price {
   margin-bottom: 1em;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .container .card-selected .checkbox {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .container .card-selected .checkbox {
   flex-grow: 1;
   background: #99E2D0;
   height: 100%;
@@ -356,10 +386,10 @@ footer div ul .more-action .icon {
   justify-content: center;
   align-items: center;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .card-container {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container {
   position: relative;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .card-container .card-label {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .card-label {
   position: absolute;
   z-index: 5;
   width: 100%;
@@ -369,26 +399,26 @@ footer div ul .more-action .icon {
   cursor: pointer;
 }
 @media (min-width: 1024px) {
-  .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .card-label:hover ~ .menu-background .menu {
+  .bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .card-label:hover ~ .menu-background .menu {
     width: 80%;
   }
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .card-container input[type=checkbox].card-order-input {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container input[type=checkbox].card-order-input {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: -1;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .card-container input[type=checkbox].card-order-input:checked ~ .menu-background .menu {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container input[type=checkbox].card-order-input:checked ~ .menu-background .menu {
   width: 80%;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background {
   background-color: #99E2D0;
   position: relative;
   height: 5em;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu {
   display: flex;
   width: 100%;
   height: 100%;
@@ -397,7 +427,7 @@ footer div ul .more-action .icon {
   position: absolute;
   z-index: 2;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu h4, .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu p {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu h4, .bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -406,29 +436,25 @@ footer div ul .more-action .icon {
   margin: 0;
   padding: 25px 0 0 25px;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu .menu-description {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu .menu-description {
   width: 88%;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu p {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu p {
   margin: 0;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu .price {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu .price {
   display: flex;
   align-items: end;
   justify-content: center;
   padding: 10px;
 }
-.restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .fa-check-circle {
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .fa-check-circle {
   position: absolute;
   right: 70px;
   color: white;
   font-size: 40px;
   top: 50%;
   transform: translate(50%, -50%);
-}
-
-.header-image {
-  width: 100%;
 }
 
 :root {
