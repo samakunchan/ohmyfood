@@ -80,7 +80,7 @@ header .text-title {
 
 footer {
   width: 100%;
-  background: var(--Grey, #353535);
+  background: #353535;
   color: white;
   display: flex;
   justify-content: center;
