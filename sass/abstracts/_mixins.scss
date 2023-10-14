@@ -21,9 +21,9 @@
 /// @access public
 @mixin mobile-layout-section {
   position: relative;
-  display: flex;
-  width: 90%;
-  margin: 0 25px;
+  //display: flex;
+  width: 100%;
+  margin: 0 auto;
   max-width: $default-size;
 }
 

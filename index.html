@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="sass/main.css">
   </head>
   <body>
+  <!-- Header -->
     <header>
-      <a href="javascript:void(0)" class="arrow-back">
-        <i class="fas fa-arrow-left"></i>
-      </a>
       <h1 class="text-title">OhMyFood</h1>
     </header>
+  <!-- End Header -->
     <div class="localisation">
       <div>
         <i class="fas fa-map-marker-alt"></i>
@@ -26,28 +25,72 @@
       </div>
     </div>
     <main>
-      <p>Test de mise à jour de github action</p>
-      <button class="call-to-action">Explorez les menus</button>
-      <br>
-      <br>
-      <br>
-      <span class="badge">Nouveau</span>
-      <br>
-      <br>
-      <br>
-      <section class="restaurants-section">
+      <!-- Section exploration et reservation des restaurants -->
+      <section class="reservation-section">
+        <div class="reservation-container">
+          <h2>Réservez le menu qui vous convient</h2>
+          <p class="f300">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+          <a href="#allRestaurants" class="call-to-action">Explorez nos restaurants</a>
+        </div>
+      </section>
+      <!-- End Section exploration et reservation des restaurants -->
+      
+      <!-- Fonctionnement -->
+      <section class="fonctionnement-section">
+        <div class="fonctionnement-container">
+          <h2>Fonctionnement</h2>
+          <div class="fonctionnement-item">
+            <a class="card-link" href="javascript:void(0)">
+              <article class="card-article-infos">
+                <div class="card-content-infos row">
+                  <span class="pill">1</span>
+                  <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                  <h4 class="card-title card-infos myoverflow">Choisissez un restaurant</h4>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="fonctionnement-item">
+            <a class="card-link" href="javascript:void(0)">
+              <article class="card-article-infos">
+                <div class="card-content-infos row">
+                  <span class="pill">2</span>
+                  <span class="icon"><i class="fas fa-list-ul"></i></span>
+                  <h4 class="card-title card-infos myoverflow">Composez cotre menu</h4>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="fonctionnement-item">
+            <a class="card-link" href="javascript:void(0)">
+              <article class="card-article-infos">
+                <div class="card-content-infos row">
+                  <span class="pill">3</span>
+                  <span class="icon"><i class="fas fa-store"></i></span>
+                  <h4 class="card-title card-infos myoverflow">Dégustez au restaurant</h4>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Fonctionnement -->
+      
+      <!-- Tout les restaurants -->
+      <section class="restaurants-section" id="allRestaurants">
         <div class="menus">
           <div class="menu-title">
             <h2 class="f500">Restaurants</h2>
           </div>
           
+          <!-- Restaurant: La palette du gôut -->
           <div class="menu-content space">
-            <a class="card-link" href="javascript:void(0)">
+            <a class="card-link" href="menu-la-palette-du-gout.html">
               <article class="card-article">
-                <img class="card-image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant">
+                <img class="card-image" src="images/restaurants/restaurant-la-palette-du-gout.jpg" alt="Image du restaurant">
                 <div class="card-content row-between">
                   <div>
-                    <h3 class="card-title">La palette du bon goût</h3>
+                    <h3 class="card-title">La palette du gôut</h3>
                     <p class="f300">Ménilmontant</p>
                   </div>
                   <div class="heart-container">
@@ -61,14 +104,17 @@
               </article>
             </a>
           </div>
+          <!-- End Restaurant: La palette du gôut -->
+          
+          <!-- Restaurant: La note enchantée -->
           <div class="menu-content space">
-            <a class="card-link space" href="javascript:void(0)">
+            <a class="card-link space" href="menu-la-note-enchantee.html">
               <article class="card-article">
-                <img class="card-image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant">
+                <img class="card-image" src="images/restaurants/restaurant-la-note-enchantee.jpg" alt="Image du restaurant">
                 <div class="card-content row-between">
                   <div>
-                    <h3 class="card-title">La palette du bon goût</h3>
-                    <p class="f300">Ménilmontant</p>
+                    <h3 class="card-title">La note enchantée</h3>
+                    <p class="f300">Charonne</p>
                   </div>
                   <div class="heart-container">
                     <label for="like2" class="like-restaurant-label">
@@ -81,146 +127,58 @@
               </article>
             </a>
           </div>
+          <!-- Restaurant: La note enchantée -->
           
+          <!-- Restaurant: A la française -->
+          <div class="menu-content space">
+            <a class="card-link" href="menu-a-la-francaise.html">
+              <article class="card-article">
+                <img class="card-image" src="images/restaurants/restaurant-a-la-francaise.jpg" alt="Image du restaurant">
+                <div class="card-content row-between">
+                  <div>
+                    <h3 class="card-title">A la française</h3>
+                    <p class="f300">Cité Rouge</p>
+                  </div>
+                  <div class="heart-container">
+                    <label for="like3" class="like-restaurant-label">
+                      <input class="like-restaurant-input" type="checkbox" name="order" id="like3" />
+                      <i class="fas fa-heart heart-empty"></i>
+                      <i class="fas fa-heart heart-full"></i>
+                    </label>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+          <!-- Restaurant: A la française -->
+          
+          <!-- Restaurant: Le délice des sens -->
+          <div class="menu-content space">
+            <a class="card-link space" href="menu-le-delice-des-sens.html">
+              <article class="card-article">
+                <img class="card-image" src="images/restaurants/restaurant-le-delice-des-sens.jpg" alt="Image du restaurant">
+                <div class="card-content row-between">
+                  <div>
+                    <h3 class="card-title">Le délice des sens</h3>
+                    <p class="f300">Folie-Méricourt</p>
+                  </div>
+                  <div class="heart-container">
+                    <label for="like4" class="like-restaurant-label">
+                      <input class="like-restaurant-input" type="checkbox" name="order" id="like4" />
+                      <i class="fas fa-heart heart-empty"></i>
+                      <i class="fas fa-heart heart-full"></i>
+                    </label>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+          <!-- Restaurant: Le délice des sens -->
          
         </div>
       </section>
-      
-      <section class="menus-section">
-        <div class="menus">
-          
-          <div class="menu-title">
-            <h2 class="f300">Entrées</h2>
-          </div>
-          
-          <div class="menu-content space">
-            <a class="card-link" href="javascript:void(0)">
-              <article class="card-article">
-                <div class="card-container">
-                  <input class="card-order-input" type="checkbox" name="order" id="order1" />
-                  <label for="order1" class="card-label"></label>
-                  <div class="menu-background">
-                    <div class="menu">
-                      <div class="menu-description">
-                        <h3>Bouchée de homard croustillant</h3>
-                        <p>
-                          <span>Et sa farandole de petits légumes</span>
-                        </p>
-                      </div>
-                      <span class="price">35€</span>
-                    </div>
-                    <i class="fas fa-check-circle"></i>
-                  </div>
-                </div>
-              </article>
-            </a>
-          </div>
-          
-          <div class="menu-content space">
-            <a class="card-link" href="javascript:void(0)">
-              <article class="card-article">
-                <div class="card-container">
-                  <input class="card-order-input" type="checkbox" name="order" id="order2" />
-                  <label for="order2" class="card-label"></label>
-                  <div class="menu-background">
-                    <div class="menu">
-                      <div class="menu-description">
-                        <h3>Foie gras de canard cuit entier</h3>
-                        <p>
-                          <span>Confiture de figue et pain toasté</span>
-                        </p>
-                      </div>
-                      <span class="price">35€</span>
-                    </div>
-                    <i class="fas fa-check-circle"></i>
-                  </div>
-                </div>
-              </article>
-            </a>
-          </div>
-          
-        </div>
-      </section>
-<!--      -->
-<!--      <section class="fonctionnement">-->
-<!--        <div>-->
-<!--          <h2>Fonctionnement</h2>-->
-<!--          <div class="fonctionnement-container">-->
-<!--            <div class="fonctionnement-item">-->
-<!--              <a class="card-link" href="javascript:void(0)">-->
-<!--                <article class="card-article-infos">-->
-<!--                  <div class="card-content-infos row">-->
-<!--                    <span class="pill">1</span>-->
-<!--                    <span class="icon"><i class="fas fa-mobile-alt"></i></span>-->
-<!--                    <h4 class="card-title card-infos myoverflow">Choisissez un restaurant</h4>-->
-<!--                  </div>-->
-<!--                </article>-->
-<!--              </a>-->
-<!--            </div>-->
-<!--            <div class="fonctionnement-item">-->
-<!--              <a class="card-link" href="javascript:void(0)">-->
-<!--                <article class="card-article-infos">-->
-<!--                  <div class="card-content-infos row">-->
-<!--                    <span class="pill">2</span>-->
-<!--                    <span class="icon"><i class="fas fa-list-ul"></i></span>-->
-<!--                    <h4 class="card-title card-infos myoverflow">Composez cotre menu</h4>-->
-<!--                  </div>-->
-<!--                </article>-->
-<!--              </a>-->
-<!--            </div>-->
-<!--            <div class="fonctionnement-item">-->
-<!--              <a class="card-link" href="javascript:void(0)">-->
-<!--                <article class="card-article-infos">-->
-<!--                  <div class="card-content-infos row">-->
-<!--                    <span class="pill">3</span>-->
-<!--                    <span class="icon"><i class="fas fa-store"></i></span>-->
-<!--                    <h4 class="card-title card-infos myoverflow">Dégustez au restaurant</h4>-->
-<!--                  </div>-->
-<!--                </article>-->
-<!--              </a>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </section>-->
-<!--      -->
-<!--      <section class="reservation">-->
-<!--        <div>-->
-<!--          <h2>Réservez le menu qui vous convient</h2>-->
-<!--          <p class="f300">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>-->
-<!--          <button class="call-to-action">Explorez nos restaurants</button>-->
-<!--        </div>-->
-<!--      </section>-->
-<!--      -->
-<!--      <div>-->
-<!--        <img class="header-image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant">-->
-<!--      </div>-->
-<!--      -->
-<!--      <section class="xxx">-->
-<!--        <div class="menu-container">-->
-<!--          <h1 class="text-title">La palette du goût</h1>-->
-<!--          <div class="menu-content">-->
-<!--            <section class="description-menu">-->
-<!--              <h2 class="f300">Entrées</h2>-->
-<!--&lt;!&ndash;              <a class="card-link" href="javascript:void(0)">&ndash;&gt;-->
-<!--&lt;!&ndash;                <article class="card-article">&ndash;&gt;-->
-<!--&lt;!&ndash;                  <div class="card-container">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div class="menu">&ndash;&gt;-->
-<!--&lt;!&ndash;                      <h3 class="card-title">Œuf au plat</h3>&ndash;&gt;-->
-<!--&lt;!&ndash;                      <p class="f300">Assaisonné à la truffe sur lit de caviar</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div>&ndash;&gt;-->
-<!--&lt;!&ndash;                      <strong class="price">20 €</strong>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <span class="checkbox">&ndash;&gt;-->
-<!--&lt;!&ndash;                <i class="fas fa-check-circle" style="color: white;"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;              </span>&ndash;&gt;-->
-<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                </article>&ndash;&gt;-->
-<!--&lt;!&ndash;              </a>&ndash;&gt;-->
-<!--            </section>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </section>-->
+      <!-- Tout les restaurants -->
+
       <footer>
         <div>
           <h2 class="text-title">OhMyFood</h2>

@@ -1,5 +1,11 @@
-.restaurants-section {
+
+
+.restaurants-section,
+.reservation-container,
+.fonctionnement-container {
   @include mobile-layout-section;
+}
+.restaurants-section {
   .menus {
     width: 100%;
   }
@@ -17,7 +23,7 @@
   }
 }
 
-.reservation {
+.reservation-section {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -33,8 +39,7 @@
   }
 }
 
-.fonctionnement{
-  width: 100%;
+.fonctionnement-section{
   background-color: $white;
   .fonctionnement-container{
     display: flex;

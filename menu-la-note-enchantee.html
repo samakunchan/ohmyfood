@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Menu - La note enchantée</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="sass/main.css">
+  </head>
+  <body class="body-detail">
+    <!-- Header -->
+    <header>
+      <a href="index.html" class="arrow-back">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <h1 class="text-title">OhMyFood</h1>
+    </header>
+    <!-- End Header -->
+    
+    <!-- Contenu principal -->
+    <main>
+      <!-- Header Image -->
+      <div class="header-image bg-la-note-enchantee"></div>
+      <!-- End Header Image -->
+      
+      <section class="bg-section-menus">
+        <!-- Description restaurant -->
+        <section class="restaurant-section">
+          <section class="menus-section">
+            <!-- Titre et bouton like -->
+            <div class="row-between">
+              <!-- Titre -->
+              <h2 class="text-title">La noté enchantée</h2>
+              <!-- End Titre -->
+              
+              <!-- Bouton Like -->
+              <div class="heart-container">
+                <label for="like1" class="like-restaurant-label">
+                  <input class="like-restaurant-input" type="checkbox" name="order" id="like1" />
+                  <i class="fas fa-heart heart-empty"></i>
+                  <i class="fas fa-heart heart-full"></i>
+                </label>
+              </div>
+              <!-- End Bouton Like -->
+            </div>
+            <!-- End Titre et bouton like -->
+            
+            <!-- Menus -->
+            <div class="menus">
+              <!-- Entrées -->
+              <div class="menu-title">
+                <h3 class="f300">Entrées</h3>
+              </div>
+              
+              <div class="menu-content space">
+                <a class="card-link" href="javascript:void(0)">
+                  <article class="card-article">
+                    <div class="card-container">
+                      <input class="card-order-input" type="checkbox" name="order" id="entre1" />
+                      <label for="entre1" class="card-label"></label>
+                      <div class="menu-background">
+                        <div class="menu">
+                          <div class="menu-description">
+                            <h4>Raviole de foie gras</h4>
+                            <p>
+                              <span>Accompagnées de leur crème à la truffe</span>
+                            </p>
+                          </div>
+                          <span class="price">25€</span>
+                        </div>
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              
+              <div class="menu-content space">
+                <a class="card-link" href="javascript:void(0)">
+                  <article class="card-article">
+                    <div class="card-container">
+                      <input class="card-order-input" type="checkbox" name="order" id="entre2" />
+                      <label for="entre2" class="card-label"></label>
+                      <div class="menu-background">
+                        <div class="menu">
+                          <div class="menu-description">
+                            <h4>Caviar osciètre</h4>
+                            <p>
+                              <span>Sur blini à la farine de blé noir</span>
+                            </p>
+                          </div>
+                          <span class="price">35€</span>
+                        </div>
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              
+              <div class="menu-content space">
+                <a class="card-link" href="javascript:void(0)">
+                  <article class="card-article">
+                    <div class="card-container">
+                      <input class="card-order-input" type="checkbox" name="order" id="entre3" />
+                      <label for="entre3" class="card-label"></label>
+                      <div class="menu-background">
+                        <div class="menu">
+                          <div class="menu-description">
+                            <h4>Homar et espuma de potiron</h4>
+                            <p>
+                              <span>Marinés aux zestes d'orange</span>
+                            </p>
+                          </div>
+                          <span class="price">20€</span>
+                        </div>
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              
+              <div class="menu-content space">
+                <a class="card-link" href="javascript:void(0)">
+                  <article class="card-article">
+                    <div class="card-container">
+                      <input class="card-order-input" type="checkbox" name="order" id="entre4" />
+                      <label for="entre4" class="card-label"></label>
+                      <div class="menu-background">
+                        <div class="menu">
+                          <div class="menu-description">
+                            <h4>Foie gras de canard cuit entier</h4>
+                            <p>
+                              <span>Confiture de figue et pain toasté</span>
+                            </p>
+                          </div>
+                          <span class="price">35€</span>
+                        </div>
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <!-- End Entrée -->
+              
+              <!-- Plats -->
+              <div class="menu-title">
+                <h2 class="f300">Plats</h2>
+              </div>
+              
+              <div class="menu-content space">
+                <a class="card-link" href="javascript:void(0)">
+                  <article class="card-article">
+                    <div class="card-container">
+                      <input class="card-order-input" type="checkbox" name="order" id="dish1" />
+                      <label for="dish1" class="card-label"></label>
+                      <div class="menu-background">
+                        <div class="menu">
+                          <div class="menu-description">
+                            <h4>Noix de coquilles Saint-Jacques</h4>
+                            <p>
+                              <span>Sur lit de purée de céleri-rave</span>
+                            </p>
+                          </div>
+                          <span class="price">40€</span>
+                        </div>
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              
+              <div class="menu-content space">
+                <a class="card-link" href="javascript:void(0)">
+                  <article class="card-article">
+                    <div class="card-container">
+                      <input class="card-order-input" type="checkbox" name="order" id="dish2" />
+                      <label for="dish2" class="card-label"></label>
+                      <div class="menu-background">
+                        <div class="menu">
+                          <div class="menu-description">
+                            <h4>Langoustine poêlés</h4>
+                            <p>
+                              <span>Purée de patate douce</span>
+                            </p>
+                          </div>
+                          <span class="price">35€</span>
+                        </div>
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              
+              <div class="menu-content space">
+                <a class="card-link" href="javascript:void(0)">
+                  <article class="card-article">
+                    <div class="card-container">
+                      <input class="card-order-input" type="checkbox" name="order" id="dish3" />
+                      <label for="dish3" class="card-label"></label>
+                      <div class="menu-background">
+                        <div class="menu">
+                          <div class="menu-description">
+                            <h4>Mijoté de queue de boeuf</h4>
+                            <p>
+                              <span>Et riz sauvage aux zestes de citron</span>
+                            </p>
+                          </div>
+                          <span class="price">45€</span>
+                        </div>
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <!-- End Plats -->
+              
+              <!-- Dessert -->
+              <div class="menu-title">
+                <h2 class="f300">Desserts</h2>
+              </div>
+              
+              <div class="menu-content space">
+                <a class="card-link" href="javascript:void(0)">
+                  <article class="card-article">
+                    <div class="card-container">
+                      <input class="card-order-input" type="checkbox" name="order" id="dessert1" />
+                      <label for="dessert1" class="card-label"></label>
+                      <div class="menu-background">
+                        <div class="menu">
+                          <div class="menu-description">
+                            <h4>Macaron noisette et chocolat</h4>
+                            <p>
+                              <span>Glace au caramel brun et sel de Guérande</span>
+                            </p>
+                          </div>
+                          <span class="price">18€</span>
+                        </div>
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              
+              <div class="menu-content space">
+                <a class="card-link" href="javascript:void(0)">
+                  <article class="card-article">
+                    <div class="card-container">
+                      <input class="card-order-input" type="checkbox" name="order" id="dessert2" />
+                      <label for="dessert2" class="card-label"></label>
+                      <div class="menu-background">
+                        <div class="menu">
+                          <div class="menu-description">
+                            <h4>Baba au rhum revisité</h4>
+                            <p>
+                              <span>Revisitée</span>
+                            </p>
+                          </div>
+                          <span class="price">22€</span>
+                        </div>
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              
+              <div class="menu-content space">
+                <a class="card-link" href="javascript:void(0)">
+                  <article class="card-article">
+                    <div class="card-container">
+                      <input class="card-order-input" type="checkbox" name="order" id="dessert3" />
+                      <label for="dessert3" class="card-label"></label>
+                      <div class="menu-background">
+                        <div class="menu">
+                          <div class="menu-description">
+                            <h4>Tarte au citron</h4>
+                            <p>
+                              <span>Déstructurée</span>
+                            </p>
+                          </div>
+                          <span class="price">23€</span>
+                        </div>
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <!-- End dessert -->
+            </div>
+            <!-- End Menu -->
+          </section>
+          
+          <!-- Bouton pour commander -->
+          <button class="call-to-action">Commandez</button>
+          <!-- End Bouton pour commander -->
+        </section>
+        <!-- End Description restaurant -->
+      </section>
+      
+      <!-- Footer -->
+      <footer>
+        <div>
+          <h2 class="text-title">OhMyFood</h2>
+          <ul>
+            <li class="more-action row">
+            <span class="icon">
+              <i class="fas fa-utensils"></i>
+            </span>
+              <span>Proposer un restaurant</span>
+            </li>
+            <li class="more-action row">
+            <span class="icon">
+              <i class="fas fa-hands-helping"></i>
+            </span>
+              <span>Devenir partenaire</span>
+            </li>
+            <li>Mentions légales</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+    <!-- End Contenu principal -->
+  </body>
+</html>

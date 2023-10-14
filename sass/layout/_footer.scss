@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  background: var(--Grey, #353535);
+  background: $bg-footer-color;
   color: $white;
   display: flex;
   justify-content: center;
