@@ -1,15 +1,20 @@
-
+.fonctionnement-container,
+.menus {
+  padding: 0 1em;
+}
 
 .restaurants-section,
 .reservation-container,
 .fonctionnement-container {
   @include mobile-layout-section;
-}
-.restaurants-section {
-  .menus {
+  @include respond-to('medium') {
+    position: relative;
     width: 100%;
+    margin: 0 auto;
+    max-width: 50em;
   }
 }
+
 .localisation {
   display: flex;
   justify-content: center;
@@ -53,5 +58,18 @@
       }
     }
 
+  }
+}
+
+.restaurants-section {
+  .restaurant-container {
+    @include respond-to('medium') {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+    }
+    .menus {
+      width: 100%;
+    }
   }
 }
