@@ -3,6 +3,10 @@ body {
   background-color: $bg-color;
 }
 
+.body-detail {
+  background-color: $white;
+}
+
 main{
   display: flex;
   flex-direction: column;
