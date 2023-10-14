@@ -113,6 +113,7 @@ footer div ul .more-action .icon {
   cursor: pointer;
   transition: 0.5s;
   margin: 50px 0 0 0;
+  text-decoration: none;
   background: linear-gradient(356deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
 }
@@ -239,6 +240,11 @@ footer div ul .more-action .icon {
   color: #9356DC;
 }
 
+.fonctionnement-container,
+.menus {
+  padding: 0 1em;
+}
+
 .restaurants-section,
 .reservation-container,
 .fonctionnement-container {
@@ -247,9 +253,15 @@ footer div ul .more-action .icon {
   margin: 0 auto;
   max-width: 28em;
 }
-
-.restaurants-section .menus {
-  width: 100%;
+@media (min-width: 1024px) {
+  .restaurants-section,
+  .reservation-container,
+  .fonctionnement-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 50em;
+  }
 }
 
 .localisation {
@@ -295,6 +307,17 @@ footer div ul .more-action .icon {
 }
 .fonctionnement-section .fonctionnement-container .fonctionnement-item h2 {
   text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .restaurants-section .restaurant-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+}
+.restaurants-section .restaurant-container .menus {
+  width: 100%;
 }
 
 .header-image {

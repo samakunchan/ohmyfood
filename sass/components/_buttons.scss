@@ -6,6 +6,7 @@
   cursor: pointer;
   transition: 0.5s;
   margin: 50px 0 0 0;
+  text-decoration: none;
   @include with-gradiant-style-btn(false);
   @include with-box-shadow-style-btn(false);
   &:hover {
