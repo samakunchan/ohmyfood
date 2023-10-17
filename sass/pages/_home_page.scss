@@ -66,7 +66,7 @@
     @include respond-to('medium') {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 1em;
+      grid-gap: 0 3em;
     }
     .menus {
       width: 100%;

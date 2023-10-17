@@ -9,12 +9,15 @@
     background-color: $white;
     position: relative;
     @include with-curve-all-edges;
-    @include with-box-shadow-style-btn(true);
+    @include with-box-shadow-style;
     .card-image {
       width: 100%;
-      height: 18em;
+      height: 15em;
       object-fit: cover;
       @include with-curve-topRight-topLeft;
+      @include respond-to('medium') {
+        height: 12em;
+      }
     }
     .card-content {
       padding: 8px 15px;
