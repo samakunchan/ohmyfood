@@ -3,15 +3,30 @@
   padding: 0 1em;
 }
 
+.fonctionnement-container {
+  @include mobile-layout-section;
+  @include respond-to('medium') {
+    width: unset;
+    position: relative;
+    margin: 0 auto;
+    max-width: 60em;
+    .fonctionnements {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
 .restaurants-section,
 .reservation-container,
-.fonctionnement-container {
+{
   @include mobile-layout-section;
   @include respond-to('medium') {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    max-width: 50em;
+    max-width: 60em;
   }
 }
 
@@ -39,7 +54,7 @@
     text-align: center;
     width: 30em;
     p {
-      margin: 50px 0;
+      margin: 1.5em 0;
     }
   }
 }
@@ -47,17 +62,19 @@
 .fonctionnement-section{
   background-color: $white;
   .fonctionnement-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     .fonctionnement-item {
       padding: 30px;
       text-align: center;
+      //@include respond-to('medium') {
+      //  text-align: unset;
+      //}
       h2{
         text-align: left;
       }
+      .card-title {
+        margin: 5px 1em;
+      }
     }
-
   }
 }
 

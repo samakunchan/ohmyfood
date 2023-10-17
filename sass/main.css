@@ -25,10 +25,13 @@ section {
 
 body, .call-to-action {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 30px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+body {
+  font-size: 1.5em;
 }
 
 .f300 {
@@ -254,7 +257,6 @@ footer div ul .more-action .icon {
 }
 .card-link .card-article-infos {
   padding: 0;
-  max-width: 28em;
   background-color: #F3F3F3;
   position: relative;
   border-radius: 35px;
@@ -271,15 +273,27 @@ footer div ul .more-action .icon {
   background-color: #9356DC;
   border-radius: 50%;
   color: white;
-  font-size: 30px;
+  font-size: 1.5em;
 }
 .card-link .card-article-infos .card-content-infos .icon {
-  width: 100px;
+  width: 3em;
   text-align: center;
   color: #7E7E7E;
+  font-size: 1.5em;
 }
 .card-link .card-article-infos .card-content-infos:hover > .icon {
   color: #9356DC;
+}
+.card-link .card-article-infos .card-content-infos .card-title {
+  font-size: 1.5em;
+}
+@media (min-width: 1024px) {
+  .card-link .card-article-infos .card-content-infos {
+    padding: 1em 15px;
+  }
+  .card-link .card-article-infos .card-content-infos .card-title, .card-link .card-article-infos .card-content-infos .icon, .card-link .card-article-infos .card-content-infos .pill {
+    font-size: inherit;
+  }
 }
 
 .fonctionnement-container,
@@ -287,22 +301,40 @@ footer div ul .more-action .icon {
   padding: 0 1em;
 }
 
-.restaurants-section,
-.reservation-container,
 .fonctionnement-container {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  max-width: 28em;
+  max-width: 40em;
+}
+@media (min-width: 1024px) {
+  .fonctionnement-container {
+    width: unset;
+    position: relative;
+    margin: 0 auto;
+    max-width: 60em;
+  }
+  .fonctionnement-container .fonctionnements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.restaurants-section,
+.reservation-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 40em;
 }
 @media (min-width: 1024px) {
   .restaurants-section,
-  .reservation-container,
-  .fonctionnement-container {
+  .reservation-container {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    max-width: 50em;
+    max-width: 60em;
   }
 }
 
@@ -332,16 +364,11 @@ footer div ul .more-action .icon {
   width: 30em;
 }
 .reservation-section div p {
-  margin: 50px 0;
+  margin: 1.5em 0;
 }
 
 .fonctionnement-section {
   background-color: white;
-}
-.fonctionnement-section .fonctionnement-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 .fonctionnement-section .fonctionnement-container .fonctionnement-item {
   padding: 30px;
@@ -349,6 +376,9 @@ footer div ul .more-action .icon {
 }
 .fonctionnement-section .fonctionnement-container .fonctionnement-item h2 {
   text-align: left;
+}
+.fonctionnement-section .fonctionnement-container .fonctionnement-item .card-title {
+  margin: 5px 1em;
 }
 
 @media (min-width: 1024px) {
@@ -404,7 +434,7 @@ footer div ul .more-action .icon {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  max-width: 28em;
+  max-width: 40em;
 }
 .bg-section-menus .restaurant-section .menus-section .heart-container {
   position: relative;

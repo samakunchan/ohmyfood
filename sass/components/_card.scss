@@ -26,7 +26,7 @@
   }
   .card-article-infos{
     padding: 0;
-    max-width: $default-size;
+    //max-width: $default-size;
     background-color: $bg-color;
     position: relative;
     border-radius: 35px;
@@ -41,15 +41,25 @@
         background-color: #9356DC;
         border-radius: 50%;
         color: white;
-        font-size: 30px;
+        font-size: 1.5em;
       }
       .icon {
-        width: 100px;
+        width: 3em;
         text-align: center;
         color: #7E7E7E;
+        font-size: 1.5em;
       }
       &:hover > .icon {
         color: $primary;
+      }
+      .card-title {
+        font-size: 1.5em;
+      }
+      @include respond-to('medium') {
+        padding: 1em 15px;
+        .card-title, .icon, .pill {
+          font-size: inherit;
+        }
       }
     }
   }
