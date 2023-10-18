@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Le délice des sens</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -33,7 +34,7 @@
         <section class="restaurant-section">
           <section class="menus-section">
             <!-- Titre et bouton like -->
-            <div class="row-between">
+            <div class="menu-main-title row-menu-detail">
               <!-- Titre -->
               <h2 class="text-title">Le délice des sens</h2>
               <!-- End Titre -->
@@ -42,7 +43,7 @@
               <div class="heart-container">
                 <label for="like1" class="like-restaurant-label">
                   <input class="like-restaurant-input" type="checkbox" name="order" id="like1" />
-                  <i class="fas fa-heart heart-empty"></i>
+                  <i class="fas fa-heart heart-empty heart-grey"></i>
                   <i class="fas fa-heart heart-full"></i>
                 </label>
               </div>
@@ -129,7 +130,7 @@
               
               <!-- Plats -->
               <div class="menu-title">
-                <h2 class="f300">Plats</h2>
+                <h3 class="f300">Plats</h3>
               </div>
               
               <div class="menu-content space">
@@ -204,7 +205,7 @@
               
               <!-- Dessert -->
               <div class="menu-title">
-                <h2 class="f300">Desserts</h2>
+                <h3 class="f300">Desserts</h3>
               </div>
               
               <div class="menu-content space">
@@ -286,32 +287,31 @@
         </section>
         <!-- End Description restaurant -->
       </section>
-      
-      <!-- Footer -->
-      <footer>
-        <div>
-          <h2 class="text-title">OhMyFood</h2>
-          <ul>
-            <li class="more-action row">
-            <span class="icon">
-              <i class="fas fa-utensils"></i>
-            </span>
-              <span>Proposer un restaurant</span>
-            </li>
-            <li class="more-action row">
-            <span class="icon">
-              <i class="fas fa-hands-helping"></i>
-            </span>
-              <span>Devenir partenaire</span>
-            </li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      </footer>
-      <!-- End Footer -->
-      
     </main>
     <!-- End Contenu principal -->
+    
+    <!-- Footer -->
+    <footer>
+      <div>
+        <h2 class="text-title">OhMyFood</h2>
+        <ul>
+          <li class="more-action row">
+          <span class="icon">
+            <i class="fas fa-utensils"></i>
+          </span>
+            <span>Proposer un restaurant</span>
+          </li>
+          <li class="more-action row">
+          <span class="icon">
+            <i class="fas fa-hands-helping"></i>
+          </span>
+            <span>Devenir partenaire</span>
+          </li>
+          <li>Mentions légales</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- End Footer -->
   </body>
 </html>

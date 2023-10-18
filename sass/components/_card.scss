@@ -22,41 +22,44 @@
     .card-content {
       padding: 8px 15px;
       position: relative;
+      .description-container {
+        width: 80%;
+      }
     }
   }
   .card-article-infos{
     padding: 0;
-    //max-width: $default-size;
     background-color: $bg-color;
     position: relative;
-    border-radius: 35px;
+    border-radius: 20px;
     @include with-box-shadow-style-btn(true);
     .card-content-infos {
-      padding: 50px 15px;
+      padding: 24px 15px;
       position: relative;
       .pill {
         position: absolute;
-        left: -25px;
-        padding: 5px 15px;
+        left: -15px;
         background-color: #9356DC;
         border-radius: 50%;
         color: white;
-        font-size: 1.5em;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
       }
       .icon {
-        width: 3em;
+        width: 16px;
+        padding: 0 10px;
         text-align: center;
         color: #7E7E7E;
-        font-size: 1.5em;
       }
       &:hover > .icon {
         color: $primary;
       }
-      .card-title {
-        font-size: 1.5em;
+      strong {
+        padding: 0 20px;
       }
       @include respond-to('medium') {
-        padding: 1em 15px;
+        padding: 1.3em 15px;
         .card-title, .icon, .pill {
           font-size: inherit;
         }

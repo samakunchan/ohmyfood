@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -13,24 +14,35 @@
     <link rel="stylesheet" href="sass/main.css">
   </head>
   <body>
-  <!-- Header -->
+  <div class="loading">
+    <div class="ring">Loading
+      <span></span>
+    </div>
+  </div>
+    <!-- Header -->
     <header>
       <h1 class="text-title">OhMyFood</h1>
     </header>
-  <!-- End Header -->
-    <div class="localisation">
-      <div>
-        <i class="fas fa-map-marker-alt"></i>
-        <span>Paris, Belleville</span>
-      </div>
-    </div>
+    <!-- End Header -->
+  
+    <!-- Contenu principal -->
     <main>
+      
+      <div class="localisation">
+        <div>
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Paris, Belleville</span>
+        </div>
+      </div>
+      
       <!-- Section exploration et reservation des restaurants -->
       <section class="reservation-section">
         <div class="reservation-container">
-          <h2>Réservez le menu qui vous convient</h2>
+          <h2 class="section-title">Réservez le menu qui vous convient</h2>
           <p class="f300">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-          <a href="#allRestaurants" class="call-to-action">Explorez nos restaurants</a>
+          <div>
+            <a href="#allRestaurants" class="call-to-action">Explorez nos restaurants</a>
+          </div>
         </div>
       </section>
       <!-- End Section exploration et reservation des restaurants -->
@@ -38,39 +50,43 @@
       <!-- Fonctionnement -->
       <section class="fonctionnement-section">
         <div class="fonctionnement-container">
-          <h2>Fonctionnement</h2>
-          <div class="fonctionnement-item">
-            <a class="card-link" href="javascript:void(0)">
-              <article class="card-article-infos">
-                <div class="card-content-infos row">
-                  <span class="pill">1</span>
-                  <span class="icon"><i class="fas fa-mobile-alt"></i></span>
-                  <h4 class="card-title card-infos myoverflow">Choisissez un restaurant</h4>
-                </div>
-              </article>
-            </a>
+          <div class="menu-title">
+            <h2 class="section-title">Fonctionnement</h2>
           </div>
-          <div class="fonctionnement-item">
-            <a class="card-link" href="javascript:void(0)">
-              <article class="card-article-infos">
-                <div class="card-content-infos row">
-                  <span class="pill">2</span>
-                  <span class="icon"><i class="fas fa-list-ul"></i></span>
-                  <h4 class="card-title card-infos myoverflow">Composez cotre menu</h4>
-                </div>
-              </article>
-            </a>
-          </div>
-          <div class="fonctionnement-item">
-            <a class="card-link" href="javascript:void(0)">
-              <article class="card-article-infos">
-                <div class="card-content-infos row">
-                  <span class="pill">3</span>
-                  <span class="icon"><i class="fas fa-store"></i></span>
-                  <h4 class="card-title card-infos myoverflow">Dégustez au restaurant</h4>
-                </div>
-              </article>
-            </a>
+          <div class="fonctionnements">
+            <div class="fonctionnement-item">
+              <a class="card-link" href="javascript:void(0)">
+                <article class="card-article-infos">
+                  <div class="card-content-infos row">
+                    <span class="pill">1</span>
+                    <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                    <strong>Choisissez un restaurant</strong>
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="fonctionnement-item">
+              <a class="card-link" href="javascript:void(0)">
+                <article class="card-article-infos">
+                  <div class="card-content-infos row">
+                    <span class="pill">2</span>
+                    <span class="icon"><i class="fas fa-list-ul"></i></span>
+                    <strong>Composez votre menu</strong>
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="fonctionnement-item">
+              <a class="card-link" href="javascript:void(0)">
+                <article class="card-article-infos">
+                  <div class="card-content-infos row">
+                    <span class="pill">3</span>
+                    <span class="icon"><i class="fas fa-store"></i></span>
+                    <strong>Dégustez au restaurant</strong>
+                  </div>
+                </article>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -80,7 +96,7 @@
       <section class="restaurants-section" id="allRestaurants">
         <div class="menus">
           <div class="menu-title">
-            <h2 class="f500">Restaurants</h2>
+            <h2 class="section-title">Restaurants</h2>
           </div>
           
           <div class="restaurant-container">
@@ -89,15 +105,15 @@
               <a class="card-link" href="menu-la-palette-du-gout.html">
                 <article class="card-article">
                   <img class="card-image" src="images/restaurants/restaurant-la-palette-du-gout.jpg" alt="Image du restaurant">
-                  <div class="card-content row-between">
-                    <div>
+                  <div class="card-content row-menu-detail">
+                    <div class="description-container">
                       <h3 class="card-title">La palette du gôut</h3>
                       <p class="f300">Ménilmontant</p>
                     </div>
                     <div class="heart-container">
                       <label for="like1" class="like-restaurant-label">
                         <input class="like-restaurant-input" type="checkbox" name="order" id="like1" />
-                        <i class="fas fa-heart heart-empty"></i>
+                        <i class="fas fa-heart heart-empty heart-white"></i>
                         <i class="fas fa-heart heart-full"></i>
                       </label>
                     </div>
@@ -112,15 +128,15 @@
               <a class="card-link space" href="menu-la-note-enchantee.html">
                 <article class="card-article">
                   <img class="card-image" src="images/restaurants/restaurant-la-note-enchantee.jpg" alt="Image du restaurant">
-                  <div class="card-content row-between">
-                    <div>
+                  <div class="card-content row-menu-detail">
+                    <div class="description-container">
                       <h3 class="card-title">La note enchantée</h3>
                       <p class="f300">Charonne</p>
                     </div>
                     <div class="heart-container">
                       <label for="like2" class="like-restaurant-label">
                         <input class="like-restaurant-input" type="checkbox" name="order" id="like2" />
-                        <i class="fas fa-heart heart-empty"></i>
+                        <i class="fas fa-heart heart-empty heart-white"></i>
                         <i class="fas fa-heart heart-full"></i>
                       </label>
                     </div>
@@ -135,15 +151,15 @@
               <a class="card-link" href="menu-a-la-francaise.html">
                 <article class="card-article">
                   <img class="card-image" src="images/restaurants/restaurant-a-la-francaise.jpg" alt="Image du restaurant">
-                  <div class="card-content row-between">
-                    <div>
+                  <div class="card-content row-menu-detail">
+                    <div class="description-container">
                       <h3 class="card-title">A la française</h3>
                       <p class="f300">Cité Rouge</p>
                     </div>
                     <div class="heart-container">
                       <label for="like3" class="like-restaurant-label">
                         <input class="like-restaurant-input" type="checkbox" name="order" id="like3" />
-                        <i class="fas fa-heart heart-empty"></i>
+                        <i class="fas fa-heart heart-empty heart-white"></i>
                         <i class="fas fa-heart heart-full"></i>
                       </label>
                     </div>
@@ -158,15 +174,15 @@
               <a class="card-link space" href="menu-le-delice-des-sens.html">
                 <article class="card-article">
                   <img class="card-image" src="images/restaurants/restaurant-le-delice-des-sens.jpg" alt="Image du restaurant">
-                  <div class="card-content row-between">
-                    <div>
+                  <div class="card-content row-menu-detail">
+                    <div class="description-container">
                       <h3 class="card-title">Le délice des sens</h3>
                       <p class="f300">Folie-Méricourt</p>
                     </div>
                     <div class="heart-container">
                       <label for="like4" class="like-restaurant-label">
                         <input class="like-restaurant-input" type="checkbox" name="order" id="like4" />
-                        <i class="fas fa-heart heart-empty"></i>
+                        <i class="fas fa-heart heart-empty heart-white"></i>
                         <i class="fas fa-heart heart-full"></i>
                       </label>
                     </div>
@@ -182,6 +198,8 @@
       <!-- End Tout les restaurants -->
 
     </main>
+    <!-- End Contenu principal -->
+  
     <footer>
       <div>
         <h2 class="text-title">OhMyFood</h2>
