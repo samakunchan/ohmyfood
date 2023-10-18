@@ -1,9 +1,25 @@
 body, .call-to-action {
   font-family: $font-roboto;
-  font-size: 30px;
   font-style: normal;
-  font-weight: 300;
   line-height: normal;
+}
+
+body {
+  //font-size: 1.5em;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.localisation {
+  div {
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+.call-to-action {
+  font-weight: 500;
 }
 
 .f300 {
@@ -12,7 +28,16 @@ body, .call-to-action {
 
 .text-title {
   font-family: $font-Shrikhand;
-  font-size: 2em;
+  //font-size: 2em;
+  //font-weight: 700;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43.74px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .f500{

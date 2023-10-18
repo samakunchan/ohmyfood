@@ -3,7 +3,13 @@
   align-items: center;
 }
 
-.row-between {
+.row-menu-detail {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  @include respond-to('small') {
+    justify-content: space-between;
+  }
+  @include respond-to('medium') {
+    justify-content: center;
+  }
 }
