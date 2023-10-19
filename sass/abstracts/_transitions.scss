@@ -1,0 +1,42 @@
+.bg-section-menus {
+  .restaurant-section {
+    .menus-section{
+      .menu-content {
+        .card-link {
+          .card-article {
+            .card-container {
+              .card-label {
+                transition: .5s ease-in-out;
+                @include respond-to('medium') {
+                  &:hover ~ .menu-background {
+                    .menu-show {
+                      transition: .5s;
+                      width: 95px;
+                    }
+                  }
+                }
+              }
+              input[type="checkbox"].card-order-input {
+                &:checked ~ .menu-background {
+                  .menu-show {
+                    width: 95px;
+                  }
+                }
+              }
+              .menu-background {
+                .menu {
+                  transition: .5s;
+                }
+                .menu-show {
+                  transition: .5s;
+                  width: 0;
+                  background: transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

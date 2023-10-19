@@ -52,8 +52,11 @@ main{
                   .price {
                     display: flex;
                     align-items: end;
-                    justify-content: center;
+                    justify-content: end;
                   }
+                }
+                .fa-check-circle{
+                  display: flex;
                 }
               }
             }
