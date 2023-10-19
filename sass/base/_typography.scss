@@ -1,13 +1,19 @@
-body, .call-to-action {
+body {
+  font-size: 16px;
+  font-weight: 300;
   font-family: $font-roboto;
   font-style: normal;
   line-height: normal;
 }
 
-body {
-  //font-size: 1.5em;
-  font-size: 16px;
-  font-weight: 300;
+.call-to-action {
+  font-family: $font-roboto;
+  font-style: normal;
+  line-height: normal;
+}
+
+.badge {
+  font-family: $font-roboto;
 }
 
 .localisation {
@@ -28,8 +34,6 @@ body {
 
 .text-title {
   font-family: $font-Shrikhand;
-  //font-size: 2em;
-  //font-weight: 700;
   font-weight: 400;
   font-size: 30px;
   line-height: 43.74px;
@@ -42,4 +46,25 @@ body {
 
 .f500{
   font-weight: 500;
+}
+
+.ring {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.card-link {
+  .card-article-infos{
+    .card-content-infos {
+      @include respond-to('medium') {
+        .card-title, .icon, .pill {
+          font-size: inherit;
+        }
+      }
+    }
+  }
+}
+
+.heart-container {
+  font-size: 2em;
 }

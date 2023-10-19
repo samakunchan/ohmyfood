@@ -1,23 +1,14 @@
 footer {
   background: $bg-footer-color;
   color: $white;
-  @include respond-to('small') {
-    display: flex;
-    justify-content: center;
-  }
   @include respond-to('medium') {
     display: block;
   }
   div{
     padding: 0 30px;
-    //width: $default-size;
     @include respond-to('medium') {
       padding: 30px 0;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: end;
       width: 100%;
-      align-items: center;
       margin: 0 -40px;
       .text-title {
         margin: 0;
@@ -31,9 +22,6 @@ footer {
       @include respond-to('medium') {
         width: inherit;
         list-style: none;
-        display: flex;
-        justify-content: end;
-        align-items: center;
         margin: 0 30px 0 0;
         li{
           padding: 0 1em;

@@ -1,3 +1,24 @@
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .card-label {
+  transition: 0.5s ease-in-out;
+}
+@media (min-width: 1024px) {
+  .bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .card-label:hover ~ .menu-background .menu-show {
+    transition: 0.5s;
+    width: 95px;
+  }
+}
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container input[type=checkbox].card-order-input:checked ~ .menu-background .menu-show {
+  width: 95px;
+}
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu {
+  transition: 0.5s;
+}
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu-show {
+  transition: 0.5s;
+  width: 0;
+  background: transparent;
+}
+
 @keyframes fading-background-animation {
   0% {
     opacity: 0;
@@ -39,9 +60,6 @@
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   -webkit-animation-name: fading-background-animation;
@@ -62,8 +80,6 @@
   border-radius: 50%;
   text-align: center;
   line-height: 150px;
-  font-family: sans-serif;
-  font-size: 20px;
   color: #FF79DA;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -108,13 +124,6 @@ body {
   margin: 0;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 section {
   padding: 30px 0;
 }
@@ -123,15 +132,22 @@ section {
   margin: 20px 0;
 }
 
-body, .call-to-action {
+body {
+  font-size: 16px;
+  font-weight: 300;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-style: normal;
   line-height: normal;
 }
 
-body {
-  font-size: 16px;
-  font-weight: 300;
+.call-to-action {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+
+.badge {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 .localisation div span {
@@ -160,6 +176,98 @@ body {
 
 .f500 {
   font-weight: 500;
+}
+
+.ring {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .card-link .card-article-infos .card-content-infos .card-title, .card-link .card-article-infos .card-content-infos .icon, .card-link .card-article-infos .card-content-infos .pill {
+    font-size: inherit;
+  }
+}
+
+.heart-container {
+  font-size: 2em;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+}
+.localisation div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservation-section {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .fonctionnement-container .fonctionnements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.bg-section-menus .restaurant-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background {
+  display: flex;
+}
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu {
+  display: flex;
+}
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu .price {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .fa-check-circle {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  footer div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  footer div ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
 }
 
 .row {
@@ -214,12 +322,6 @@ footer {
   background: #353535;
   color: white;
 }
-@media (min-width: 768px) {
-  footer {
-    display: flex;
-    justify-content: center;
-  }
-}
 @media (min-width: 1024px) {
   footer {
     display: block;
@@ -231,11 +333,7 @@ footer div {
 @media (min-width: 1024px) {
   footer div {
     padding: 30px 0;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: end;
     width: 100%;
-    align-items: center;
     margin: 0 -40px;
   }
   footer div .text-title {
@@ -252,9 +350,6 @@ footer div ul {
   footer div ul {
     width: inherit;
     list-style: none;
-    display: flex;
-    justify-content: end;
-    align-items: center;
     margin: 0 30px 0 0;
   }
   footer div ul li {
@@ -288,7 +383,6 @@ footer div ul .more-action .icon {
 }
 
 .badge {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
   padding: 10px 20px;
   border-radius: 5px;
   background-color: #99E2D0;
@@ -305,7 +399,6 @@ footer div ul .more-action .icon {
 .heart-container {
   position: relative;
   width: 50px;
-  font-size: 2em;
 }
 .heart-container .like-restaurant-label {
   position: absolute;
@@ -425,9 +518,6 @@ footer div ul .more-action .icon {
   .card-link .card-article-infos .card-content-infos {
     padding: 1.3em 15px;
   }
-  .card-link .card-article-infos .card-content-infos .card-title, .card-link .card-article-infos .card-content-infos .icon, .card-link .card-article-infos .card-content-infos .pill {
-    font-size: inherit;
-  }
 }
 
 .fonctionnement-container,
@@ -445,11 +535,6 @@ footer div ul .more-action .icon {
     position: relative;
     margin: 0 auto;
     max-width: 60em;
-  }
-  .fonctionnement-container .fonctionnements {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -469,8 +554,6 @@ footer div ul .more-action .icon {
 }
 
 .localisation {
-  display: flex;
-  justify-content: center;
   padding: 20px;
   background-color: gainsboro;
   width: 100%;
@@ -478,13 +561,9 @@ footer div ul .more-action .icon {
 .localisation div {
   position: relative;
   width: 8em;
-  display: flex;
-  justify-content: space-between;
 }
 
 .reservation-section {
-  display: flex;
-  justify-content: center;
   width: 100%;
   background-color: #F6F6F6;
   padding-bottom: 30px;
@@ -522,6 +601,7 @@ footer div ul .more-action .icon {
     grid-gap: 0 3em;
   }
 }
+
 .header-image {
   height: 16em;
   width: 100%;
@@ -556,9 +636,6 @@ footer div ul .more-action .icon {
   background-color: #F3F3F3;
   border-top-left-radius: 70px;
   border-top-right-radius: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .bg-section-menus .restaurant-section .menus-section {
   padding: 0;
@@ -600,13 +677,6 @@ footer div ul .more-action .icon {
   height: 100%;
   left: 0;
   cursor: pointer;
-  transition: 1s;
-}
-@media (min-width: 1024px) {
-  .bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .card-label:hover ~ .menu-background .menu-show {
-    transition: 1s;
-    width: 95px;
-  }
 }
 .bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container input[type=checkbox].card-order-input {
   position: absolute;
@@ -615,21 +685,15 @@ footer div ul .more-action .icon {
   transform: translate(-50%, 50%);
   z-index: -1;
 }
-.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container input[type=checkbox].card-order-input:checked ~ .menu-background .menu-show {
-  width: 95px;
-}
 .bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background {
   background-color: #99E2D0;
   position: relative;
   height: 5em;
-  display: flex;
 }
 .bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu {
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: white;
-  transition: 0.5s;
   z-index: 2;
   overflow: hidden;
 }
@@ -649,20 +713,12 @@ footer div ul .more-action .icon {
   margin: 0;
 }
 .bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu .price {
-  width: 12%;
-  display: flex;
-  align-items: end;
-  justify-content: center;
+  width: 100%;
   padding: 10px;
 }
-.bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .menu-show {
-  transition: 1s;
-  width: 0;
-  background: transparent;
-}
 .bg-section-menus .restaurant-section .menus-section .menu-content .card-link .card-article .card-container .menu-background .fa-check-circle {
-  position: absolute;
-  right: 38px;
+  position: relative;
+  right: 12px;
   color: white;
   font-size: 24px;
   top: 50%;
