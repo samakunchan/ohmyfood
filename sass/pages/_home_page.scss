@@ -6,15 +6,9 @@
 .fonctionnement-container {
   @include mobile-layout-section;
   @include respond-to('medium') {
-    //width: unset;
     position: relative;
     margin: 0 auto;
     max-width: 60em;
-    .fonctionnements {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
   }
 }
 
@@ -24,36 +18,28 @@
   @include mobile-layout-section;
   @include respond-to('medium') {
     position: relative;
-    //width: 100%;
     margin: 0 auto;
     max-width: 60em;
   }
 }
 
 .localisation {
-  display: flex;
-  justify-content: center;
   padding: 20px;
   background-color: gainsboro;
   width: 100%;
   div {
     position: relative;
     width: 8em;
-    display: flex;
-    justify-content: space-between;
   }
 }
 
 .reservation-section {
-  display: flex;
-  justify-content: center;
   width: 100%;
   background-color: #F6F6F6;
   padding-bottom: 30px;
   div {
     padding: 30px 0;
     text-align: center;
-    //width: 30em;
     p {
       margin: 1.5em 0;
     }
@@ -84,9 +70,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 0 3em;
-    }
-    .menus {
-      //width: 100%;
     }
   }
 }

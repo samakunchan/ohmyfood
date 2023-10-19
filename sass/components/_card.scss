@@ -60,9 +60,6 @@
       }
       @include respond-to('medium') {
         padding: 1.3em 15px;
-        .card-title, .icon, .pill {
-          font-size: inherit;
-        }
       }
     }
   }
