@@ -55,8 +55,9 @@
       &:hover > .icon {
         color: $primary;
       }
-      strong {
+      .title {
         padding: 0 20px;
+        margin: 0;
       }
       @include respond-to('medium') {
         padding: 1.3em 15px;

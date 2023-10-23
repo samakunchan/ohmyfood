@@ -93,14 +93,3 @@ footer {
   display: flex;
   align-items: center;
 }
-
-.row-menu-detail {
-  display: flex;
-  justify-content: space-around;
-  @include respond-to('small') {
-    justify-content: space-between;
-  }
-  @include respond-to('medium') {
-    justify-content: center;
-  }
-}
