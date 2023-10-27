@@ -5,6 +5,8 @@
 .heart-container {
   position: relative;
   width: 50px;
+  float: right;
+  top: -80px;
   .like-restaurant-label {
     position: absolute;
     top: 20%;
@@ -58,4 +60,8 @@
 
 }
 
-
+.row-menu-detail {
+  .heart-container {
+    top: 0;
+  }
+}

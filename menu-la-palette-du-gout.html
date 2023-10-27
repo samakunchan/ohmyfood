@@ -10,36 +10,36 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
           crossorigin="anonymous"
-          referrerpolicy="no-referrer"/>
+          referrerpolicy="no-referrer">
     <link rel="stylesheet" href="sass/main.css">
   </head>
   <body class="body-detail">
     <!-- Header -->
     <header>
-      <a href="index.html" class="arrow-back">
-        <i class="fas fa-arrow-left"></i>
+      <a href="index.html" class="arrow-back" aria-label="Revenir vers la page d'accueil">
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
       </a>
       <h1 class="text-title">OhMyFood</h1>
     </header>
     <!-- End Header -->
     
     <!-- Contenu principal -->
-    <main>
+    <main aria-label="Contenu principale du menu La palette du goût">
       <!-- Header Image -->
       <div class="header-image bg-la-palette-du-gout"></div>
       <!-- End Header Image -->
       
-      <section class="bg-section-menus">
+      <div class="bg-section-menus">
         <!-- Description restaurant -->
         <div class="restaurant-section">
-          <section class="menus-section">
+          <section class="menus-section" aria-label="Menu">
             <!-- Titre et bouton like -->
             <div class="menu-main-title row-menu-detail">
               <h2 class="text-title">La palette du goût</h2>
               
               <div class="heart-container">
-                <label for="like1" class="like-restaurant-label">
-                  <input class="like-restaurant-input" type="checkbox" name="order" id="like1" />
+                <label for="like1" class="like-restaurant-label" aria-label="Voter pour le restaurant">
+                  <input class="like-restaurant-input" type="checkbox" name="order" id="like1">
                   <i class="fas fa-heart heart-empty heart-grey"></i>
                   <i class="fas fa-heart heart-full"></i>
                 </label>
@@ -55,20 +55,20 @@
               </div>
               
               <div class="menu-content space">
-                <a class="card-link" href="javascript:void(0)">
-                  <article class="card-article">
+                <div class="card-link">
+                  <article class="card-article" aria-labelledby="titreEntree1 prixEntree1">
                     <div class="card-container">
-                      <input class="card-order-input" type="checkbox" name="order" id="entre1" />
+                      <input class="card-order-input" type="checkbox" name="order" id="entre1">
                       <label for="entre1" class="card-label"></label>
                       <div class="menu-background">
                         <div class="menu">
                           <div class="menu-description">
-                            <h4>Fricassée d'escargots</h4>
+                            <h4 id="titreEntree1">Fricassée d'escargots</h4>
                             <p>
                               <span>Au piment d'Espelette</span>
                             </p>
                           </div>
-                          <span class="price">25€</span>
+                          <span id="prixEntree1" class="price">25€</span>
                         </div>
                         <div class="menu-show">
                           <i class="fas fa-check-circle"></i>
@@ -76,24 +76,24 @@
                       </div>
                     </div>
                   </article>
-                </a>
+                </div>
               </div>
               
               <div class="menu-content space">
-                <a class="card-link" href="javascript:void(0)">
-                  <article class="card-article">
+                <div class="card-link">
+                  <article class="card-article" aria-labelledby="titreEntree2 prixEntree2">
                     <div class="card-container">
-                      <input class="card-order-input" type="checkbox" name="order" id="entre2" />
+                      <input class="card-order-input" type="checkbox" name="order" id="entre2">
                       <label for="entre2" class="card-label"></label>
                       <div class="menu-background">
                         <div class="menu">
                           <div class="menu-description">
-                            <h4>Foie gras de canard mi-cuit</h4>
+                            <h4 id="titreEntree2">Foie gras de canard mi-cuit</h4>
                             <p>
                               <span>Et ses copeaux de truffe noire</span>
                             </p>
                           </div>
-                          <span class="price">35€</span>
+                          <span id="prixEntree2" class="price">35€</span>
                         </div>
                         <div class="menu-show">
                           <i class="fas fa-check-circle"></i>
@@ -101,24 +101,24 @@
                       </div>
                     </div>
                   </article>
-                </a>
+                </div>
               </div>
               
               <div class="menu-content space">
-                <a class="card-link" href="javascript:void(0)">
-                  <article class="card-article">
+                <div class="card-link">
+                  <article class="card-article" aria-labelledby="titreEntree3 prixEntree3">
                     <div class="card-container">
-                      <input class="card-order-input" type="checkbox" name="order" id="entre3" />
+                      <input class="card-order-input" type="checkbox" name="order" id="entre3">
                       <label for="entre3" class="card-label"></label>
                       <div class="menu-background">
                         <div class="menu">
                           <div class="menu-description">
-                            <h4>Oeuf au plat</h4>
+                            <h4 id="titreEntree3">Oeuf au plat</h4>
                             <p>
                               <span>Assaisonné à la truffe sur un lit de caviar</span>
                             </p>
                           </div>
-                          <span class="price">20€</span>
+                          <span id="prixEntree3" class="price">20€</span>
                         </div>
                         <div class="menu-show">
                           <i class="fas fa-check-circle"></i>
@@ -126,7 +126,7 @@
                       </div>
                     </div>
                   </article>
-                </a>
+                </div>
               </div>
               <!-- End Entrée -->
               
@@ -136,20 +136,20 @@
               </div>
               
               <div class="menu-content space">
-                <a class="card-link" href="javascript:void(0)">
-                  <article class="card-article">
+                <div class="card-link">
+                  <article class="card-article" aria-labelledby="titrePlat1 prixPlat1">
                     <div class="card-container">
-                      <input class="card-order-input" type="checkbox" name="order" id="dish1" />
+                      <input class="card-order-input" type="checkbox" name="order" id="dish1">
                       <label for="dish1" class="card-label"></label>
                       <div class="menu-background">
                         <div class="menu">
                           <div class="menu-description">
-                            <h4>Filet de boeuf aux herbes</h4>
+                            <h4 id="titrePlat1">Filet de boeuf aux herbes</h4>
                             <p>
                               <span>Accompagné de sa ribambelle de légumes</span>
                             </p>
                           </div>
-                          <span class="price">40€</span>
+                          <span id="prixPlat1" class="price">40€</span>
                         </div>
                         <div class="menu-show">
                           <i class="fas fa-check-circle"></i>
@@ -157,24 +157,24 @@
                       </div>
                     </div>
                   </article>
-                </a>
+                </div>
               </div>
               
               <div class="menu-content space">
-                <a class="card-link" href="javascript:void(0)">
-                  <article class="card-article">
+                <div class="card-link">
+                  <article class="card-article" aria-labelledby="titrePlat2 prixPlat2">
                     <div class="card-container">
-                      <input class="card-order-input" type="checkbox" name="order" id="dish2" />
+                      <input class="card-order-input" type="checkbox" name="order" id="dish2">
                       <label for="dish2" class="card-label"></label>
                       <div class="menu-background">
                         <div class="menu">
                           <div class="menu-description">
-                            <h4>Parmentier de queue de boeuf</h4>
+                            <h4 id="titrePlat2">Parmentier de queue de boeuf</h4>
                             <p>
                               <span>A la truffe noire sur sa purée de panais</span>
                             </p>
                           </div>
-                          <span class="price">35€</span>
+                          <span id="prixPlat2" class="price">35€</span>
                         </div>
                         <div class="menu-show">
                           <i class="fas fa-check-circle"></i>
@@ -182,24 +182,24 @@
                       </div>
                     </div>
                   </article>
-                </a>
+                </div>
               </div>
               
               <div class="menu-content space">
-                <a class="card-link" href="javascript:void(0)">
-                  <article class="card-article">
+                <div class="card-link">
+                  <article class="card-article" aria-labelledby="titrePlat3 prixPlat3">
                     <div class="card-container">
-                      <input class="card-order-input" type="checkbox" name="order" id="dish3" />
+                      <input class="card-order-input" type="checkbox" name="order" id="dish3">
                       <label for="dish3" class="card-label"></label>
                       <div class="menu-background">
                         <div class="menu">
                           <div class="menu-description">
-                            <h4>Filet de turbot</h4>
+                            <h4 id="titrePlat3">Filet de turbot</h4>
                             <p>
                               <span>Aux agrumes</span>
                             </p>
                           </div>
-                          <span class="price">44€</span>
+                          <span id="prixPlat3" class="price">44€</span>
                         </div>
                         <div class="menu-show">
                           <i class="fas fa-check-circle"></i>
@@ -207,7 +207,7 @@
                       </div>
                     </div>
                   </article>
-                </a>
+                </div>
               </div>
               <!-- End Plats -->
               
@@ -217,20 +217,20 @@
               </div>
               
               <div class="menu-content space">
-                <a class="card-link" href="javascript:void(0)">
-                  <article class="card-article">
+                <div class="card-link">
+                  <article class="card-article" aria-labelledby="titreDessert1 prixDessert1">
                     <div class="card-container">
-                      <input class="card-order-input" type="checkbox" name="order" id="dessert1" />
+                      <input class="card-order-input" type="checkbox" name="order" id="dessert1">
                       <label for="dessert1" class="card-label"></label>
                       <div class="menu-background">
                         <div class="menu">
                           <div class="menu-description">
-                            <h4>Paris-Brest</h4>
+                            <h4 id="titreDessert1">Paris-Brest</h4>
                             <p>
                               <span>Revisité</span>
                             </p>
                           </div>
-                          <span class="price">18€</span>
+                          <span id="prixDessert1" class="price">18€</span>
                         </div>
                         <div class="menu-show">
                           <i class="fas fa-check-circle"></i>
@@ -238,24 +238,24 @@
                       </div>
                     </div>
                   </article>
-                </a>
+                </div>
               </div>
               
               <div class="menu-content space">
-                <a class="card-link" href="javascript:void(0)">
-                  <article class="card-article">
+                <div class="card-link">
+                  <article class="card-article" aria-labelledby="titreDessert2 prixDessert2">
                     <div class="card-container">
-                      <input class="card-order-input" type="checkbox" name="order" id="dessert2" />
+                      <input class="card-order-input" type="checkbox" name="order" id="dessert2">
                       <label for="dessert2" class="card-label"></label>
                       <div class="menu-background">
                         <div class="menu">
                           <div class="menu-description">
-                            <h4>Macaron au chocolat d'exception</h4>
+                            <h4 id="titreDessert2">Macaron au chocolat d'exception</h4>
                             <p>
                               <span>Et glace à la vanille de Madagascar</span>
                             </p>
                           </div>
-                          <span class="price">22€</span>
+                          <span id="prixDessert2" class="price">22€</span>
                         </div>
                         <div class="menu-show">
                           <i class="fas fa-check-circle"></i>
@@ -263,24 +263,24 @@
                       </div>
                     </div>
                   </article>
-                </a>
+                </div>
               </div>
               
               <div class="menu-content space">
-                <a class="card-link" href="javascript:void(0)">
-                  <article class="card-article">
+                <div class="card-link">
+                  <article class="card-article" aria-labelledby="titreDessert3 prixDessert3">
                     <div class="card-container">
-                      <input class="card-order-input" type="checkbox" name="order" id="dessert3" />
+                      <input class="card-order-input" type="checkbox" name="order" id="dessert3">
                       <label for="dessert3" class="card-label"></label>
                       <div class="menu-background">
                         <div class="menu">
                           <div class="menu-description">
-                            <h4>Mousse au chocolat</h4>
+                            <h4 id="titreDessert3">Mousse au chocolat</h4>
                             <p>
                               <span>Au piment d'Espelette et à la truffe noire</span>
                             </p>
                           </div>
-                          <span class="price">23€</span>
+                          <span id="prixDessert3" class="price">23€</span>
                         </div>
                         <div class="menu-show">
                           <i class="fas fa-check-circle"></i>
@@ -288,7 +288,7 @@
                       </div>
                     </div>
                   </article>
-                </a>
+                </div>
               </div>
               <!-- End Desserts -->
             
@@ -301,7 +301,7 @@
           <!-- End Bouton pour commander -->
         </div>
         <!-- End Description restaurant -->
-      </section>
+      </div>
     </main>
     <!-- End Contenu principal -->
     

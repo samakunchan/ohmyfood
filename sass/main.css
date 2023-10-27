@@ -399,6 +399,8 @@ footer div ul .more-action .icon {
 .heart-container {
   position: relative;
   width: 50px;
+  float: right;
+  top: -80px;
 }
 .heart-container .like-restaurant-label {
   position: absolute;
@@ -448,6 +450,10 @@ footer div ul .more-action .icon {
   opacity: 1;
 }
 
+.row-menu-detail .heart-container {
+  top: 0;
+}
+
 .card-link {
   text-decoration: none;
   color: black;
@@ -486,7 +492,7 @@ footer div ul .more-action .icon {
   background-color: #F3F3F3;
   position: relative;
   border-radius: 20px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4392156863);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.0823529412);
 }
 .card-link .card-article-infos .card-content-infos {
   padding: 24px 15px;
@@ -511,8 +517,9 @@ footer div ul .more-action .icon {
 .card-link .card-article-infos .card-content-infos:hover > .icon {
   color: #9356DC;
 }
-.card-link .card-article-infos .card-content-infos strong {
+.card-link .card-article-infos .card-content-infos .title {
   padding: 0 20px;
+  margin: 0;
 }
 @media (min-width: 1024px) {
   .card-link .card-article-infos .card-content-infos {
