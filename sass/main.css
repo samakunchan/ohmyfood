@@ -275,6 +275,21 @@ main {
   align-items: center;
 }
 
+.row-menu-detail {
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .row-menu-detail {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .row-menu-detail {
+    justify-content: center;
+  }
+}
+
 header {
   text-align: center;
   background-color: white;
@@ -435,6 +450,10 @@ footer div ul .more-action .icon {
   opacity: 1;
 }
 
+.row-menu-detail .heart-container {
+  top: 0;
+}
+
 .card-link {
   text-decoration: none;
   color: black;
@@ -473,7 +492,7 @@ footer div ul .more-action .icon {
   background-color: #F3F3F3;
   position: relative;
   border-radius: 20px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1490196078);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.0823529412);
 }
 .card-link .card-article-infos .card-content-infos {
   padding: 24px 15px;

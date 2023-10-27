@@ -15,11 +15,11 @@
   </head>
   <body>
     <!-- Loading -->
-<!--    <div class="loading">-->
-<!--      <div class="ring">Loading-->
-<!--        <span></span>-->
-<!--      </div>-->
-<!--    </div>-->
+    <div class="loading">
+      <div class="ring">Loading
+        <span></span>
+      </div>
+    </div>
     <!-- End Loading -->
     
     <!-- Header -->
@@ -29,20 +29,22 @@
     <!-- End Header -->
   
     <!-- Contenu principal -->
-    <main>
+    <main aria-label="Contenu principale du site">
       
+      <!-- Location -->
       <div class="localisation">
         <div>
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Paris, Belleville</span>
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          <span id="location" aria-description="à Paris, Belleville">Paris, Belleville</span>
         </div>
       </div>
+      <!-- End Location -->
       
       <!-- Section exploration et reservation des restaurants -->
-      <section class="reservation-section">
+      <section class="reservation-section" aria-label="Section exploration et reservation des restaurants">
         <div class="reservation-container">
           <h2 class="section-title">Réservez le menu qui vous convient</h2>
-          <p class="f300">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+          <p class="f300" id="pareRes" aria-labelledby="pareRes">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
           <div>
             <a href="#allRestaurants" class="call-to-action">Explorez nos restaurants</a>
           </div>
@@ -51,7 +53,7 @@
       <!-- End Section exploration et reservation des restaurants -->
       
       <!-- Fonctionnement -->
-      <section class="fonctionnement-section">
+      <section class="fonctionnement-section" aria-label="Fonctionnement du site">
         <div class="fonctionnement-container">
           <div class="menu-title">
             <h2 class="section-title">Fonctionnement</h2>
@@ -96,21 +98,28 @@
       <!-- End Fonctionnement -->
       
       <!-- Tout les restaurants -->
-      <section class="restaurants-section" id="allRestaurants">
+      <section class="restaurants-section" id="allRestaurants" aria-label="Tout les restaurants">
         <div class="menus">
           <div class="menu-title">
             <h2 class="section-title">Restaurants</h2>
           </div>
           
           <div class="restaurant-container">
+            
             <!-- Restaurant: La palette du gôut -->
             <div class="menu-content space">
-              <a class="card-link" href="menu-la-palette-du-gout.html">
+              <a
+                id="linkRestaurant1"
+                class="card-link"
+                href="menu-la-palette-du-gout.html"
+                aria-label="Lien vers le menu du restaurant"
+                aria-labelledby="linkRestaurant1 restaurant1 location"
+              >
                 <article class="card-article">
-                  <img class="card-image" src="images/restaurants/restaurant-la-palette-du-gout.jpg" alt="Image du restaurant">
+                  <img class="card-image" src="images/restaurants/restaurant-la-palette-du-gout.jpg" alt="Image du restaurant La palette du goût">
                   <div class="card-content">
                     <div class="description-container">
-                      <h3 class="card-title">La palette du gôut</h3>
+                      <h3 class="card-title" id="restaurant1">La palette du gôut</h3>
                       <p class="f300">Ménilmontant</p>
                     </div>
                   </div>
@@ -118,10 +127,10 @@
               </a>
               
               <div class="heart-container">
-                <label for="like1" class="like-restaurant-label">
+                <label id="label1" for="like1" class="like-restaurant-label" aria-label="Voter pour le restaurant" aria-labelledby="label1 restaurant1">
                   <input class="like-restaurant-input" type="checkbox" name="order" id="like1">
-                  <i class="fas fa-heart heart-empty heart-white"></i>
-                  <i class="fas fa-heart heart-full"></i>
+                  <i aria-hidden="true" class="fas fa-heart heart-empty heart-white"></i>
+                  <i aria-hidden="true" class="fas fa-heart heart-full"></i>
                 </label>
               </div>
             </div>
@@ -129,12 +138,18 @@
             
             <!-- Restaurant: La note enchantée -->
             <div class="menu-content space">
-              <a class="card-link space" href="menu-la-note-enchantee.html">
+              <a
+                id="linkRestaurant2"
+                class="card-link space"
+                href="menu-la-note-enchantee.html"
+                aria-label="Lien vers le menu du restaurant"
+                aria-labelledby="linkRestaurant2 restaurant2 location"
+              >
                 <article class="card-article">
-                  <img class="card-image" src="images/restaurants/restaurant-la-note-enchantee.jpg" alt="Image du restaurant">
+                  <img class="card-image" src="images/restaurants/restaurant-la-note-enchantee.jpg" alt="Image du restaurant La note enchantée">
                   <div class="card-content">
                     <div class="description-container">
-                      <h3 class="card-title">La note enchantée</h3>
+                      <h3 class="card-title" id="restaurant2">La note enchantée</h3>
                       <p class="f300">Charonne</p>
                     </div>
                   </div>
@@ -142,23 +157,29 @@
               </a>
               
               <div class="heart-container">
-                <label for="like2" class="like-restaurant-label">
+                <label id="label2" for="like2" class="like-restaurant-label" aria-label="Voter pour le restaurant" aria-labelledby="label2 restaurant2">
                   <input class="like-restaurant-input" type="checkbox" name="order" id="like2">
-                  <i class="fas fa-heart heart-empty heart-white"></i>
-                  <i class="fas fa-heart heart-full"></i>
+                  <i aria-hidden="true" class="fas fa-heart heart-empty heart-white"></i>
+                  <i aria-hidden="true" class="fas fa-heart heart-full"></i>
                 </label>
               </div>
             </div>
-            <!-- Restaurant: La note enchantée -->
+            <!-- End Restaurant: La note enchantée -->
             
             <!-- Restaurant: A la française -->
             <div class="menu-content space">
-              <a class="card-link" href="menu-a-la-francaise.html">
+              <a
+                id="linkRestaurant3"
+                class="card-link"
+                href="menu-a-la-francaise.html"
+                aria-label="Lien vers le menu du restaurant"
+                aria-labelledby="linkRestaurant3 restaurant3 location"
+              >
                 <article class="card-article">
                   <img class="card-image" src="images/restaurants/restaurant-a-la-francaise.jpg" alt="Image du restaurant">
                   <div class="card-content">
                     <div class="description-container">
-                      <h3 class="card-title">A la française</h3>
+                      <h3 class="card-title" id="restaurant3">A la française</h3>
                       <p class="f300">Cité Rouge</p>
                     </div>
                   </div>
@@ -166,23 +187,29 @@
               </a>
               
               <div class="heart-container">
-                <label for="like3" class="like-restaurant-label">
+                <label id="label3" for="like3" class="like-restaurant-label" aria-label="Voter pour le restaurant" aria-labelledby="label3 restaurant3">
                   <input class="like-restaurant-input" type="checkbox" name="order" id="like3">
-                  <i class="fas fa-heart heart-empty heart-white"></i>
-                  <i class="fas fa-heart heart-full"></i>
+                  <i aria-hidden="true" class="fas fa-heart heart-empty heart-white"></i>
+                  <i aria-hidden="true" class="fas fa-heart heart-full"></i>
                 </label>
               </div>
             </div>
-            <!-- Restaurant: A la française -->
+            <!-- End Restaurant: A la française -->
             
             <!-- Restaurant: Le délice des sens -->
             <div class="menu-content space">
-              <a class="card-link space" href="menu-le-delice-des-sens.html">
+              <a
+                id="linkRestaurant4"
+                class="card-link space"
+                href="menu-le-delice-des-sens.html"
+                aria-label="Lien vers le menu du restaurant"
+                aria-labelledby="linkRestaurant4 restaurant4 location"
+              >
                 <article class="card-article">
                   <img class="card-image" src="images/restaurants/restaurant-le-delice-des-sens.jpg" alt="Image du restaurant">
                   <div class="card-content">
                     <div class="description-container">
-                      <h3 class="card-title">Le délice des sens</h3>
+                      <h3 class="card-title" id="restaurant4">Le délice des sens</h3>
                       <p class="f300">Folie-Méricourt</p>
                     </div>
                   </div>
@@ -190,14 +217,14 @@
               </a>
               
               <div class="heart-container">
-                <label for="like4" class="like-restaurant-label">
+                <label id="label4" for="like4" class="like-restaurant-label" aria-label="Voter pour le restaurant" aria-labelledby="label4 restaurant4">
                   <input class="like-restaurant-input" type="checkbox" name="order" id="like4">
-                  <i class="fas fa-heart heart-empty heart-white"></i>
-                  <i class="fas fa-heart heart-full"></i>
+                  <i aria-hidden="true" class="fas fa-heart heart-empty heart-white"></i>
+                  <i aria-hidden="true" class="fas fa-heart heart-full"></i>
                 </label>
               </div>
             </div>
-            <!-- Restaurant: Le délice des sens -->
+            <!-- End Restaurant: Le délice des sens -->
           </div>
          
         </div>
@@ -207,20 +234,20 @@
     </main>
     <!-- End Contenu principal -->
   
-    <footer>
+    <footer aria-label="Pied de page">
       <div>
-        <h2 class="text-title">OhMyFood</h2>
-        <ul>
-          <li class="more-action row">
-            <span class="icon"><i class="fas fa-utensils"></i></span>
+        <h2 class="text-title" aria-hidden="true">OhMyFood</h2>
+        <ul aria-label="Liste des liens complémentaires">
+          <li class="more-action row" id="footerLink1" aria-labelledby="footerLink1">
+            <span class="icon" aria-hidden="true"><i class="fas fa-utensils"></i></span>
             <span>Proposer un restaurant</span>
           </li>
-          <li class="more-action row">
-            <span class="icon"><i class="fas fa-hands-helping"></i></span>
+          <li class="more-action row" id="footerLink2" aria-labelledby="footerLink2">
+            <span class="icon" aria-hidden="true"><i class="fas fa-hands-helping"></i></span>
             <span>Devenir partenaire</span>
           </li>
-          <li>Mentions légales</li>
-          <li>Contact</li>
+          <li id="footerLink3" aria-labelledby="footerLink3">Mentions légales</li>
+          <li id="footerLink4" aria-labelledby="footerLink4">Contact</li>
         </ul>
       </div>
     </footer>
