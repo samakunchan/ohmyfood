@@ -51,6 +51,15 @@
           left: 0;
         }
       }
+      .menu-container {
+        animation: fadeIn 1s linear;
+        animation-fill-mode: both;
+      }
+      @for $i from 1 through $total-type-menus {
+        .menu-container:nth-child(#{$i}) {
+          animation-delay: .25s * $i;
+        }
+      }
       .menu-content {
         .card-link {
           .card-article {
