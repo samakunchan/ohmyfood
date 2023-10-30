@@ -248,12 +248,6 @@ main {
   display: flex;
 }
 
-@media (min-width: 768px) {
-  footer {
-    display: flex;
-    justify-content: center;
-  }
-}
 @media (min-width: 1024px) {
   footer div {
     display: flex;
@@ -345,6 +339,11 @@ footer div ul {
   list-style: none;
   padding: 0;
   line-height: 1.6em;
+  margin: 0;
+}
+footer div ul a {
+  text-decoration: none;
+  color: white;
 }
 @media (min-width: 1024px) {
   footer div ul {
