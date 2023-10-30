@@ -309,24 +309,20 @@
     <!-- End Contenu principal -->
     
     <!-- Footer -->
-    <footer>
+    <footer aria-label="Pied de page">
       <div>
-        <h2 class="text-title">OhMyFood</h2>
-        <ul>
-          <li class="more-action row">
-          <span class="icon">
-            <i class="fas fa-utensils"></i>
-          </span>
+        <h2 class="text-title" aria-hidden="true">OhMyFood</h2>
+        <ul aria-label="Liste des liens complémentaires">
+          <li class="more-action row" id="footerLink1" aria-labelledby="footerLink1">
+            <span class="icon" aria-hidden="true"><i class="fas fa-utensils"></i></span>
             <span>Proposer un restaurant</span>
           </li>
-          <li class="more-action row">
-          <span class="icon">
-            <i class="fas fa-hands-helping"></i>
-          </span>
+          <li class="more-action row" id="footerLink2" aria-labelledby="footerLink2">
+            <span class="icon" aria-hidden="true"><i class="fas fa-hands-helping"></i></span>
             <span>Devenir partenaire</span>
           </li>
-          <li>Mentions légales</li>
-          <li>Contact</li>
+          <li id="footerLink3" aria-labelledby="footerLink3">Mentions légales</li>
+          <li id="footerLink4" aria-labelledby="footerLink4"><a href="mailto:ohmyfood@fake.com">Contact</a></li>
         </ul>
       </div>
     </footer>

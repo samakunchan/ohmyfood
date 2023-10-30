@@ -68,10 +68,6 @@ main{
 }
 
 footer {
-  @include respond-to('small') {
-    display: flex;
-    justify-content: center;
-  }
   div {
     @include respond-to('medium') {
       display: flex;
